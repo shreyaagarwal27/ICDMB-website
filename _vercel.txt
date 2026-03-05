@@ -1,0 +1,1 @@
+vc-domain-verify=manit.ac.in,f1e48b22eabf47846820
