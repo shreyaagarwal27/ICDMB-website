@@ -6,14 +6,14 @@ import { Calendar, CheckCircle, Clock } from "lucide-react"
 const dates = [
   {
     date: "30th March 2026",
-    title: "Short Abstracts",
-    description: "200 words abstract submission deadline",
+    title: "Full Paper Submission",
+    description: "Full paper submission deadline",
     status: "upcoming",
   },
   {
     date: "30th April 2026",
-    title: "Abstract Acceptance",
-    description: "Notification of abstract acceptance",
+    title: "Paper Acceptance",
+    description: "Notification of paper acceptance",
     status: "upcoming",
   },
   {

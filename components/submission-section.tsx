@@ -3,10 +3,9 @@
 import { Mail, FileText, Users, ArrowRight, Download, CheckCircle2 } from "lucide-react"
 
 const academiaSteps = [
-  { step: 1, title: "Abstract", description: "Submit 200-word abstract via email" },
+  { step: 1, title: "Full Paper", description: "Submit complete research paper via email" },
   { step: 2, title: "Acceptance", description: "Notification of acceptance" },
-  { step: 3, title: "Full Paper", description: "Submit complete research paper" },
-  { step: 4, title: "Revision", description: "Final revised manuscript" },
+  { step: 3, title: "Revision", description: "Final revised manuscript" },
 ]
 
 export function SubmissionSection() {
@@ -15,7 +14,7 @@ export function SubmissionSection() {
       <div className="container mx-auto px-4 max-w-7xl">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 gradient-heading">Abstracts & Papers</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 gradient-heading">Full Papers Only</h2>
           <div className="w-24 h-1 bg-primary mx-auto mb-6" />
           <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto text-lg">
             Submit your research contributions through our streamlined submission process
@@ -125,11 +124,11 @@ export function SubmissionSection() {
             </div>
             <div className="flex flex-col sm:flex-row gap-3">
               <a
-                href="mailto:icdmb2026@gmail.com?subject=Abstract%20Submission%20-%20ICDMB%202026"
+                href="mailto:icdmb2026@gmail.com?subject=Full%20Paper%20Submission%20-%20ICDMB%202026"
                 className="inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary/90 text-white font-semibold px-6 py-3 rounded-lg transition-colors"
               >
                 <Mail className="w-4 h-4" />
-                Send Abstract
+                Send Full Paper
               </a>
               <button
                 disabled

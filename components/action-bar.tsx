@@ -71,7 +71,7 @@ export function ActionBar() {
               className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-base font-semibold shadow-lg shadow-primary/25"
             >
               <FileText className="w-5 h-5 mr-2" />
-              Submit Abstract
+              Submit Full Paper
             </Button>
             <Button
               size="lg"
