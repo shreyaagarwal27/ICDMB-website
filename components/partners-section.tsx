@@ -15,25 +15,7 @@ export function PartnersSection() {
           <div className="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full" />
         </div>
 
-        <div className="flex flex-wrap items-center justify-center gap-12 max-w-4xl mx-auto">
-          {/* Springer */}
-          <div className="group bg-white dark:bg-gray-800 rounded-xl p-6 cursor-pointer transition-all duration-300 hover:shadow-xl dark:hover:shadow-primary/10">
-            <img
-              src="/images/springer-logo.png"
-              alt="Springer"
-              className="h-14 w-auto object-contain dark:brightness-110 transition-all duration-300 ease-out group-hover:scale-110"
-            />
-          </div>
-
-          {/* Atlantis Press */}
-          <div className="group bg-white dark:bg-gray-800 rounded-xl p-6 cursor-pointer transition-all duration-300 hover:shadow-xl dark:hover:shadow-primary/10">
-            <img
-              src="/images/atlantis-press-logo.png"
-              alt="Atlantis Press"
-              className="h-14 w-auto object-contain dark:brightness-110 transition-all duration-300 ease-out group-hover:scale-110"
-            />
-          </div>
-        </div>
+        
 
         <div className="mt-14 flex flex-col items-center justify-center gap-3">
           <div className="flex items-center justify-center gap-3 px-6 py-4 bg-white dark:bg-gray-800/80 backdrop-blur-sm rounded-xl border border-primary/20">
