@@ -13,9 +13,9 @@ const leadershipTeam = [
   },
   {
     role: "Patron",
-    name: "Prof. S.P.S. Rajput",
+    name: "Dr. Anupama Sharma",
     designation: "Dean ID, MANIT Bhopal",
-    image: "/images/dr-sps-rajput.jpg",
+    image: "/images/anupama-sharma.jpg",
   },
   {
     role: "Chairman",
