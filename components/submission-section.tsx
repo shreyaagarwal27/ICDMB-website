@@ -1,0 +1,147 @@
+"use client"
+
+import { Mail, FileText, Users, ArrowRight, Download, CheckCircle2 } from "lucide-react"
+
+const academiaSteps = [
+  { step: 1, title: "Abstract", description: "Submit 200-word abstract via email" },
+  { step: 2, title: "Acceptance", description: "Notification of acceptance" },
+  { step: 3, title: "Full Paper", description: "Submit complete research paper" },
+  { step: 4, title: "Revision", description: "Final revised manuscript" },
+]
+
+export function SubmissionSection() {
+  return (
+    <section id="submission" className="py-20 bg-white dark:bg-gray-950">
+      <div className="container mx-auto px-4 max-w-7xl">
+        {/* Section Header */}
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 gradient-heading">Abstracts & Papers</h2>
+          <div className="w-24 h-1 bg-primary mx-auto mb-6" />
+          <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto text-lg">
+            Submit your research contributions through our streamlined submission process
+          </p>
+        </div>
+
+        {/* Two Column Layout */}
+        <div className="grid lg:grid-cols-2 gap-8 mb-12">
+          {/* Academia Track Card */}
+          <div className="bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-2xl p-8 hover:border-primary/50 transition-all duration-300 hover:shadow-lg dark:hover:shadow-primary/10">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
+                <FileText className="w-6 h-6 text-primary" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white">Research Paper Submission</h3>
+            </div>
+
+            <p className="text-gray-600 dark:text-gray-400 mb-8">
+              Academic researchers and scholars can submit their original research work through our structured
+              peer-review process.
+            </p>
+
+            {/* Submission Progress Stepper */}
+            <div className="relative">
+              <div className="absolute left-6 top-8 bottom-8 w-0.5 bg-gray-300 dark:bg-gray-700" />
+              <div className="space-y-6">
+                {academiaSteps.map((item, index) => (
+                  <div key={item.step} className="flex items-start gap-4 relative">
+                    <div className="w-12 h-12 rounded-full bg-primary/20 border-2 border-primary flex items-center justify-center z-10 flex-shrink-0">
+                      <span className="text-primary font-bold">{item.step}</span>
+                    </div>
+                    <div className="pt-2">
+                      <h4 className="text-gray-900 dark:text-white font-semibold">{item.title}</h4>
+                      <p className="text-gray-500 dark:text-gray-500 text-sm">{item.description}</p>
+                    </div>
+                    {index < academiaSteps.length - 1 && (
+                      <ArrowRight className="absolute left-[52px] top-14 w-4 h-4 text-primary/50 rotate-90" />
+                    )}
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Industry Track Card */}
+          <div className="bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-2xl p-8 hover:border-primary/50 transition-all duration-300 hover:shadow-lg dark:hover:shadow-primary/10">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
+                <Users className="w-6 h-6 text-primary" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white">Industry Personnel & Consultants</h3>
+            </div>
+
+            <p className="text-gray-600 dark:text-gray-400 mb-6">
+              We welcome submissions from industry professionals, medical consultants, and practitioners sharing field
+              experience, case studies, and emerging trends.
+            </p>
+
+            <div className="space-y-4 mb-8">
+              <div className="flex items-start gap-3">
+                <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
+                <p className="text-gray-700 dark:text-gray-300 text-sm">
+                  Separate scheduled sessions for industry presentations
+                </p>
+              </div>
+              <div className="flex items-start gap-3">
+                <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
+                <p className="text-gray-700 dark:text-gray-300 text-sm">
+                  Dual panel peer review (Academia + Industry experts)
+                </p>
+              </div>
+              <div className="flex items-start gap-3">
+                <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
+                <p className="text-gray-700 dark:text-gray-300 text-sm">
+                  Case studies and real-world applications welcome
+                </p>
+              </div>
+              <div className="flex items-start gap-3">
+                <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
+                <p className="text-gray-700 dark:text-gray-300 text-sm">Focus on new trends and innovative practices</p>
+              </div>
+            </div>
+
+            <div className="bg-gray-100 dark:bg-gray-800 rounded-xl p-4 border border-gray-200 dark:border-gray-700">
+              <p className="text-gray-600 dark:text-gray-400 text-sm">
+                Industry submissions undergo a specialized review process that values practical insights and real-world
+                impact alongside academic rigor.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Submit via Email Card */}
+        <div className="bg-gradient-to-r from-primary/10 to-transparent border border-primary/30 rounded-2xl p-8 max-w-3xl mx-auto">
+          <div className="flex flex-col md:flex-row items-center gap-6">
+            <div className="w-16 h-16 rounded-2xl bg-primary/20 flex items-center justify-center flex-shrink-0">
+              <Mail className="w-8 h-8 text-primary" />
+            </div>
+            <div className="text-center md:text-left flex-1">
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">Submit via Email</h3>
+              <a
+                href="mailto:icdmb2026@gmail.com"
+                className="text-primary text-lg font-mono hover:text-primary/80 transition-colors"
+              >
+                icdmb2026@gmail.com
+              </a>
+            </div>
+            <div className="flex flex-col sm:flex-row gap-3">
+              <a
+                href="mailto:icdmb2026@gmail.com?subject=Abstract%20Submission%20-%20ICDMB%202026"
+                className="inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary/90 text-white font-semibold px-6 py-3 rounded-lg transition-colors"
+              >
+                <Mail className="w-4 h-4" />
+                Send Abstract
+              </a>
+              <button
+                disabled
+                className="inline-flex items-center justify-center gap-2 border border-gray-400 dark:border-gray-600 text-gray-500 dark:text-gray-400 font-semibold px-6 py-3 rounded-lg cursor-not-allowed opacity-60"
+              >
+                <Download className="w-4 h-4" />
+                Format (Coming Soon)
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}

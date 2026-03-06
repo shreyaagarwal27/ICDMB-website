@@ -1,0 +1,174 @@
+"use client"
+
+import { motion } from "framer-motion"
+import { Sparkles } from "lucide-react"
+
+const registrationData = [
+  {
+    category: "Industry Professional / Scientist",
+    earlyBird: "₹8,000",
+    regular: "₹9,000",
+    badge: null,
+  },
+  {
+    category: "Academicians (Faculty / Post-doctorate)",
+    earlyBird: "₹6,000",
+    regular: "₹6,500",
+    badge: null,
+  },
+  {
+    category: "Research Scholars / Students",
+    earlyBird: "₹5,000",
+    regular: "₹6,000",
+    badge: "Best Value",
+  },
+  {
+    category: "Accompanying Person & Participant",
+    earlyBird: "₹1,500",
+    regular: "₹1,500",
+    badge: null,
+  },
+  {
+    category: "Academicians / Industrialist (Abroad)",
+    earlyBird: "$150",
+    regular: "$200",
+    badge: null,
+  },
+]
+
+export function RegistrationSection() {
+  return (
+    <section id="registration" className="relative py-20 bg-[#fafafa] dark:bg-gray-950">
+      {/* Subtle gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-gray-100/50 dark:from-gray-900/50 to-transparent pointer-events-none" />
+
+      <div className="container mx-auto px-4 relative z-10">
+        {/* Section Header */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-12"
+        >
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            <span className="gradient-heading">Registration</span> <span className="text-primary">Fees</span>
+          </h2>
+          <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+            Secure your spot at ICDMB 2026. Early bird registration offers significant savings.
+          </p>
+        </motion.div>
+
+        {/* Desktop Table View */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="hidden md:block"
+        >
+          <div className="overflow-hidden rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 shadow-xl shadow-primary/5">
+            {/* Table Header with blue glow */}
+            <div className="relative">
+              <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-primary to-transparent opacity-60" />
+              <div className="grid grid-cols-3 bg-gray-50 dark:bg-gray-800">
+                <div className="px-6 py-4 text-left">
+                  <span className="font-semibold text-gray-900 dark:text-white text-lg">Category</span>
+                </div>
+                <div className="px-6 py-4 text-center bg-blue-50 dark:bg-primary/10 border-x border-primary/20">
+                  <span className="font-semibold text-primary text-lg">Early Bird</span>
+                  <p className="text-xs text-primary/60 mt-1">Recommended</p>
+                </div>
+                <div className="px-6 py-4 text-center">
+                  <span className="font-semibold text-gray-900 dark:text-white text-lg">Regular</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Table Body - White rows */}
+            <div className="divide-y divide-gray-200 dark:divide-gray-800">
+              {registrationData.map((row, index) => (
+                <div
+                  key={index}
+                  className="grid grid-cols-3 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors duration-200"
+                >
+                  <div className="px-6 py-5 flex items-center gap-3">
+                    <span className="text-gray-700 dark:text-gray-200">{row.category}</span>
+                    {row.badge && (
+                      <span className="inline-flex items-center gap-1 px-2 py-1 rounded-full bg-amber-100 dark:bg-primary/20 border border-amber-300 dark:border-primary/30 text-amber-700 dark:text-primary text-xs font-medium">
+                        <Sparkles className="w-3 h-3" />
+                        {row.badge}
+                      </span>
+                    )}
+                  </div>
+                  <div className="px-6 py-5 text-center bg-blue-50/50 dark:bg-primary/5 border-x border-primary/10">
+                    <span className="font-mono text-lg text-primary font-semibold">{row.earlyBird}</span>
+                  </div>
+                  <div className="px-6 py-5 text-center">
+                    <span className="font-mono text-lg text-gray-600 dark:text-gray-300">{row.regular}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </motion.div>
+
+        {/* Mobile Card View - White cards */}
+        <div className="md:hidden space-y-4">
+          {registrationData.map((row, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.4, delay: index * 0.1 }}
+              className="rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 overflow-hidden"
+            >
+              {/* Card Header */}
+              <div className="px-5 py-4 border-b border-gray-200 dark:border-gray-700 flex items-center justify-between">
+                <span className="font-medium text-gray-900 dark:text-white">{row.category}</span>
+                {row.badge && (
+                  <span className="inline-flex items-center gap-1 px-2 py-1 rounded-full bg-amber-100 dark:bg-primary/20 border border-amber-300 dark:border-primary/30 text-amber-700 dark:text-primary text-xs font-medium">
+                    <Sparkles className="w-3 h-3" />
+                    {row.badge}
+                  </span>
+                )}
+              </div>
+
+              {/* Card Body */}
+              <div className="grid grid-cols-2 divide-x divide-gray-200 dark:divide-gray-800">
+                <div className="p-4 bg-blue-50/50 dark:bg-primary/5">
+                  <p className="text-xs text-primary mb-1">Early Bird</p>
+                  <p className="font-mono text-xl text-primary font-semibold">{row.earlyBird}</p>
+                </div>
+                <div className="p-4">
+                  <p className="text-xs text-gray-500 dark:text-gray-400 mb-1">Regular</p>
+                  <p className="font-mono text-xl text-gray-600 dark:text-gray-300">{row.regular}</p>
+                </div>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+
+        {/* CTA Button - Solid Deep Cerulean Blue */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          className="mt-10 text-center"
+        >
+          <a
+            href="#"
+            className="inline-flex items-center gap-2 px-8 py-4 rounded-lg bg-primary hover:bg-primary/90 text-white font-semibold text-lg transition-all duration-300 shadow-lg shadow-primary/20 hover:shadow-primary/40"
+          >
+            Register Now
+          </a>
+          <p className="mt-4 text-sm text-gray-500 dark:text-gray-500">
+            Early bird registration closes on <span className="text-primary">July 15, 2026</span>
+          </p>
+        </motion.div>
+      </div>
+    </section>
+  )
+}
