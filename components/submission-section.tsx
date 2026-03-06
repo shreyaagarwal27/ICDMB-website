@@ -14,7 +14,7 @@ export function SubmissionSection() {
       <div className="container mx-auto px-4 max-w-7xl">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 gradient-heading">Full Papers Only</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 gradient-heading">Full Papers</h2>
           <div className="w-24 h-1 bg-primary mx-auto mb-6" />
           <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto text-lg">
             Submit your research contributions through our streamlined submission process
