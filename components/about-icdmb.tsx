@@ -11,33 +11,15 @@ export function AboutICDMB() {
           {/* Text Content - Left Side */}
           <div className="space-y-6 flex-1 order-2 lg:order-1">
             <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
-              The{" "}
-              <span className="text-gray-900 dark:text-white font-semibold">
-                International Conference on Advanced Design, Materials, and Biomedical Engineering (ICDMB 2026)
-              </span>
-              , hosted by the Department of Mechanical Engineering at MANIT Bhopal, brings together researchers,
-              industry experts, academicians, and students to explore cutting-edge developments shaping modern
-              engineering.
+              The <span className="text-gray-900 dark:text-white font-semibold">Advanced Design, Materials, and Biomedical Engineering (ICDMB 2026)</span> conference at MANIT Bhopal brings together researchers, industry experts, and academicians to explore emerging innovations in mechanical and biomedical engineering.
             </p>
 
             <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-              Key themes include <span className="text-primary">machine design</span>,{" "}
-              <span className="text-primary">tribology</span>,
-              <span className="text-primary"> computational mechanics</span>,{" "}
-              <span className="text-primary">fracture mechanics</span>,
-              <span className="text-primary"> vehicle dynamics</span>, and{" "}
-              <span className="text-primary">product design & development</span>. The conference also highlights
-              advances in <span className="text-primary">advanced composites & nano-materials</span>,
-              <span className="text-primary"> materials characterization</span>, AI-driven robotics and automation in
-              mechanical systems, and smart material design.
+              The conference focuses on a wide range of themes including <span className="text-primary">machine design</span>, <span className="text-primary">tribology</span>, <span className="text-primary">computational mechanics</span>, <span className="text-primary">fracture mechanics</span>, <span className="text-primary">vehicle dynamics</span>, <span className="text-primary">product design and development</span>, <span className="text-primary">advanced composites</span>, <span className="text-primary">nanomaterials</span>, <span className="text-primary">materials characterization and processing</span>.
             </p>
 
             <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-              Biomedical engineering tracks will showcase innovations in{" "}
-              <span className="text-primary">scaffold development</span> and
-              <span className="text-primary"> implant biomechanics</span>. ICDMB 2026 aims to foster collaboration,
-              facilitate high-impact research exchange, and inspire the technologies of tomorrow. Join us to contribute,
-              connect, and catalyze innovation.
+              It also highlights modern advancements in <span className="text-primary">artificial intelligence for mechanical systems</span>, <span className="text-primary">robotics and automation</span>, <span className="text-primary">smart material design</span>, and biomedical fields such as <span className="text-primary">scaffold development</span> and <span className="text-primary">implant biomechanics</span>. ICDMB 2026 aims to provide a collaborative platform for exchanging ideas, showcasing research, and inspiring future technologies.
             </p>
           </div>
 
