@@ -5,21 +5,9 @@ import { Calendar, CheckCircle, Clock } from "lucide-react"
 
 const dates = [
   {
-    date: "30th March 2026",
+    date: "30th April 2026",
     title: "Full Paper Submission",
     description: "Full paper submission deadline",
-    status: "upcoming",
-  },
-  {
-    date: "30th April 2026",
-    title: "Paper Acceptance",
-    description: "Notification of paper acceptance",
-    status: "upcoming",
-  },
-  {
-    date: "15th June 2026",
-    title: "Full Paper Submission",
-    description: "Complete paper submission deadline",
     status: "upcoming",
   },
   {
@@ -35,7 +23,7 @@ const dates = [
     status: "upcoming",
   },
   {
-    date: "08th – 09th Oct 2026",
+    date: "8th – 9th Oct 2026",
     title: "Conference Dates",
     description: "ICDMB 2026 at MANIT Bhopal",
     status: "highlight",
