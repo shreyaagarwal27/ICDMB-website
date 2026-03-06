@@ -89,6 +89,8 @@ const advisoryCommittee = [
 
 // Technical Program Committee
 const technicalCommittee = [
+  "Dr. SPS Rajput",
+  "Dr. S Krishnan",
   "Dr. R.M. Sarviya",
   "Dr. Siraj Ahmed",
   "Dr. J. L. Bhagoria",
