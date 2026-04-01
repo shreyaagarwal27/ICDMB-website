@@ -170,7 +170,7 @@ export function TravelAttractionsSection() {
               </div>
               <div className="p-5">
                 <div className="flex items-start gap-2 mb-3">
-                  <MapPin className="w-4 h-4 text-primary flex-shrink-0 mt-1" />
+                  <MapPin className="w-4 h-4 text-primary shrink-0 mt-1" />
                   <h3 className="font-serif text-lg font-semibold text-gray-900 dark:text-white">Bharat Bhavan</h3>
                 </div>
                 <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
@@ -190,7 +190,7 @@ export function TravelAttractionsSection() {
               </div>
               <div className="p-5">
                 <div className="flex items-start gap-2 mb-3">
-                  <MapPin className="w-4 h-4 text-primary flex-shrink-0 mt-1" />
+                  <MapPin className="w-4 h-4 text-primary shrink-0 mt-1" />
                   <h3 className="font-serif text-lg font-semibold text-gray-900 dark:text-white">Ratapani Jungle Lodge</h3>
                 </div>
                 <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
@@ -210,7 +210,7 @@ export function TravelAttractionsSection() {
               </div>
               <div className="p-5">
                 <div className="flex items-start gap-2 mb-3">
-                  <MapPin className="w-4 h-4 text-primary flex-shrink-0 mt-1" />
+                  <MapPin className="w-4 h-4 text-primary shrink-0 mt-1" />
                   <h3 className="font-serif text-lg font-semibold text-gray-900 dark:text-white">
                     Bhimbetka Rock Shelters
                   </h3>
@@ -233,7 +233,7 @@ export function TravelAttractionsSection() {
               </div>
               <div className="p-5">
                 <div className="flex items-start gap-2 mb-3">
-                  <MapPin className="w-4 h-4 text-primary flex-shrink-0 mt-1" />
+                  <MapPin className="w-4 h-4 text-primary shrink-0 mt-1" />
                   <h3 className="font-serif text-lg font-semibold text-gray-900 dark:text-white">Sanchi Stupa</h3>
                 </div>
                 <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
