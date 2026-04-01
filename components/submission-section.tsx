@@ -127,9 +127,8 @@ export function SubmissionSection() {
                 Submit Full Paper
               </a>
               <a
-                href="https://docs.google.com/document/d/1ntDdyYn_QRJEyX5nAs12N7Qfew58ALXK/edit?usp=sharing&ouid=105638565090162498509&rtpof=true&sd=true"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/templates/ICDMB_Paper_Template.pdf"
+                download="ICDMB_Paper_Template.pdf"
                 className="inline-flex items-center justify-center gap-2 border border-primary text-primary hover:bg-primary/10 font-semibold px-6 py-3 rounded-lg transition-colors"
               >
                 <Download className="w-4 h-4" />
