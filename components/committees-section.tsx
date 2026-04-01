@@ -90,7 +90,6 @@ const advisoryCommittee = [
 // Technical Program Committee
 const technicalCommittee = [
   "Dr. SPS Rajput",
-  "Dr. S Krishnan",
   "Dr. R.M. Sarviya",
   "Dr. Siraj Ahmed",
   "Dr. J. L. Bhagoria",
@@ -121,6 +120,7 @@ const technicalCommittee = [
   "Dr. Ashish Das",
   "Dr. N. Jayanth",
   "Dr. Kuldeep Yadav",
+  "Dr. S Krishnan",
 ]
 
 export function CommitteesSection() {
