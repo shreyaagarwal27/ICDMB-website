@@ -3,7 +3,7 @@
 import type React from "react"
 
 import { useState } from "react"
-import { Send, CheckCircle } from "lucide-react"
+import { Send, CheckCircle, Phone } from "lucide-react"
 
 export function ContactSection() {
   const [formState, setFormState] = useState<"idle" | "submitting" | "success">("idle")
@@ -32,7 +32,14 @@ export function ContactSection() {
       <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 gradient-heading">Drop Your Message</h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full" />
+          <div className="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full mb-6" />
+          <a 
+            href="tel:+919577839402" 
+            className="inline-flex items-center gap-2 text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors"
+          >
+            <Phone className="w-5 h-5" />
+            <span className="font-medium">+91 95778 39402</span>
+          </a>
         </div>
 
         <div className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-2xl p-8 lg:p-10">
