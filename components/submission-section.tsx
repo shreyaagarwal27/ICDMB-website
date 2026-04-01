@@ -114,7 +114,7 @@ export function SubmissionSection() {
               <Mail className="w-8 h-8 text-primary" />
             </div>
             <div className="text-center md:text-left flex-1">
-              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">Submit via Email</h3>
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">Submit Paper for ICDMB</h3>
               <a
                 href="mailto:icdmb2026@gmail.com"
                 className="text-primary text-lg font-mono hover:text-primary/80 transition-colors"
@@ -130,7 +130,7 @@ export function SubmissionSection() {
                 className="inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary/90 text-white font-semibold px-6 py-3 rounded-lg transition-colors"
               >
                 <Mail className="w-4 h-4" />
-                Register Here
+                Submit Full Paper
               </a>
               <button
                 disabled
