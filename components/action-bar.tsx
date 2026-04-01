@@ -71,9 +71,9 @@ export function ActionBar() {
               className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-base font-semibold shadow-lg shadow-primary/25"
               asChild
             >
-              <a href="https://cmt3.research.microsoft.com/ICDMB2026" target="_blank" rel="noopener noreferrer">
+              <a href="https://forms.gle/4LxgxtVJSGgcxPRg9" target="_blank" rel="noopener noreferrer">
                 <FileText className="w-5 h-5 mr-2" />
-                Submit Full Paper
+                Register Here
               </a>
             </Button>
             <Button

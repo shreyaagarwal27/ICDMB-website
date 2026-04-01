@@ -124,13 +124,13 @@ export function SubmissionSection() {
             </div>
             <div className="flex flex-col sm:flex-row gap-3">
               <a
-                href="https://cmt3.research.microsoft.com/ICDMB2026"
+                href="https://forms.gle/4LxgxtVJSGgcxPRg9"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary/90 text-white font-semibold px-6 py-3 rounded-lg transition-colors"
               >
                 <Mail className="w-4 h-4" />
-                Submit Full Paper
+                Register Here
               </a>
               <button
                 disabled
