@@ -150,24 +150,7 @@ export function RegistrationSection() {
           ))}
         </div>
 
-        {/* CTA Button - Solid Deep Cerulean Blue */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          className="mt-10 text-center"
-        >
-          <a
-            href="#"
-            className="inline-flex items-center gap-2 px-8 py-4 rounded-lg bg-primary hover:bg-primary/90 text-white font-semibold text-lg transition-all duration-300 shadow-lg shadow-primary/20 hover:shadow-primary/40"
-          >
-            Register Now
-          </a>
-          <p className="mt-4 text-sm text-gray-500 dark:text-gray-500">
-            Early bird registration closes on <span className="text-primary">July 15, 2026</span>
-          </p>
-        </motion.div>
+        
       </div>
     </section>
   )
