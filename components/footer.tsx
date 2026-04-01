@@ -61,10 +61,13 @@ export function Footer() {
                 <Mail className="w-4 h-4 text-primary" />
                 <span>icdmb2026@gmail.com</span>
               </a>
-              <div className="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-400">
+              <a
+                href="tel:+919577839402"
+                className="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-400 group hover:text-gray-900 dark:hover:text-white transition-colors"
+              >
                 <Phone className="w-4 h-4 text-primary" />
-                <span>+91-755-4051000</span>
-              </div>
+                <span>+91 95778 39402</span>
+              </a>
               <a
                 href="https://www.manit.ac.in"
                 target="_blank"
