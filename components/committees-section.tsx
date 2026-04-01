@@ -123,6 +123,18 @@ const technicalCommittee = [
   "Dr. S Krishnan",
 ]
 
+// Students Organisation Committee
+const studentsCommittee = [
+  "Avinash Kumar",
+  "Govind Das Tiwari",
+  "Ankit Shrivastava",
+  "Ankit Dwivedi",
+  "Mahendra Soni",
+  "Ajay Kumar Singh",
+]
+
+
+
 export function CommitteesSection() {
   return (
     <section id="organizing-committee" className="py-20 bg-white dark:bg-gray-950">
@@ -282,7 +294,7 @@ export function CommitteesSection() {
         </div>
 
         {/* Section 4: Technical Program Committee */}
-        <div>
+        <div className="mb-16">
           <motion.h3
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -300,6 +312,36 @@ export function CommitteesSection() {
           >
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
               {technicalCommittee.map((name, index) => (
+                <div
+                  key={name}
+                  className="text-gray-700 dark:text-gray-300 text-sm py-2 px-3 bg-gray-100 dark:bg-gray-800 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700 hover:text-gray-900 dark:hover:text-white transition-colors"
+                >
+                  {name}
+                </div>
+              ))}
+            </div>
+          </motion.div>
+        </div>
+
+        {/* Section 5: Students Organisation Committee */}
+        <div>
+          <motion.h3
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="text-2xl font-semibold text-primary mb-4"
+          >
+            Students Organisation Committee
+          </motion.h3>
+          <p className="text-gray-600 dark:text-gray-400 text-sm mb-6">MANIT Bhopal</p>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            className="bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-xl p-6"
+          >
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
+              {studentsCommittee.map((name, index) => (
                 <div
                   key={name}
                   className="text-gray-700 dark:text-gray-300 text-sm py-2 px-3 bg-gray-100 dark:bg-gray-800 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700 hover:text-gray-900 dark:hover:text-white transition-colors"
