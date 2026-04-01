@@ -116,10 +116,9 @@ export function TravelAttractionsSection() {
             <div className="bg-white dark:bg-gray-800 rounded-xl overflow-hidden border border-gray-200 dark:border-gray-700 hover:border-primary/50 transition-all duration-300 group">
               <div className="relative overflow-hidden h-40 bg-gray-200 dark:bg-gray-600">
                 <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/2/2c/View_of_Upper_Lake_from_Van_Vihar_National_park_Bhopal_India.jpg"
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/bhopal-ohTyvX9hfZIfBl9iOxuXR5y4cjAGEj.jpg"
                   alt="Upper Lake (Bada Talab)"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  crossOrigin="anonymous"
                 />
               </div>
               <div className="p-5">
