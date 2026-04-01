@@ -1,6 +1,6 @@
 "use client"
 
-import { Mail, FileText, Users, Download, CheckCircle2, ArrowRight } from "lucide-react"
+import { FileText, Users, Download, CheckCircle2, ArrowRight } from "lucide-react"
 
 const academiaSteps = [
   { step: 1, title: "Full Paper Submission", description: "Submit full paper (10-12 pages) in prescribed format via email" },
@@ -111,16 +111,10 @@ export function SubmissionSection() {
         <div className="bg-gradient-to-r from-primary/10 to-transparent border border-primary/30 rounded-2xl p-8 max-w-3xl mx-auto">
           <div className="flex flex-col md:flex-row items-center gap-6">
             <div className="w-16 h-16 rounded-2xl bg-primary/20 flex items-center justify-center flex-shrink-0">
-              <Mail className="w-8 h-8 text-primary" />
+              <FileText className="w-8 h-8 text-primary" />
             </div>
             <div className="text-center md:text-left flex-1">
-              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">Submit Paper for ICDMB</h3>
-              <a
-                href="mailto:icdmb2026@gmail.com"
-                className="text-primary text-lg font-mono hover:text-primary/80 transition-colors"
-              >
-                icdmb2026@gmail.com
-              </a>
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white">Submit Paper for ICDMB</h3>
             </div>
             <div className="flex flex-col sm:flex-row gap-3">
               <a
@@ -129,7 +123,7 @@ export function SubmissionSection() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary/90 text-white font-semibold px-6 py-3 rounded-lg transition-colors"
               >
-                <Mail className="w-4 h-4" />
+                <FileText className="w-4 h-4" />
                 Submit Full Paper
               </a>
               <button
