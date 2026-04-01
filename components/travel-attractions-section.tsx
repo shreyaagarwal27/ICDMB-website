@@ -138,10 +138,9 @@ export function TravelAttractionsSection() {
             <div className="bg-white dark:bg-gray-800 rounded-xl overflow-hidden border border-gray-200 dark:border-gray-700 hover:border-primary/50 transition-all duration-300 group">
               <div className="relative overflow-hidden h-40 bg-gray-200 dark:bg-gray-600">
                 <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/6/62/Van_Vihar.jpg"
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/van-vihar-national-park-bhopal-madhya-pradesh-1-attr-hero-9O0Wx8QiJszazz3nvhRNCWn4xMfhy0.jpg"
                   alt="Van Vihar National Park"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  crossOrigin="anonymous"
                 />
               </div>
               <div className="p-5">
