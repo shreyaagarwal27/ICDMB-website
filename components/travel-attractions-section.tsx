@@ -124,7 +124,7 @@ export function TravelAttractionsSection() {
               </div>
               <div className="p-5">
                 <div className="flex items-start gap-2 mb-3">
-                  <MapPin className="w-4 h-4 text-primary flex-shrink-0 mt-1" />
+                  <MapPin className="w-4 h-4 text-primary shrink-0 mt-1" />
                   <h3 className="font-serif text-lg font-semibold text-gray-900 dark:text-white">
                     Upper Lake (Bada Talab)
                   </h3>
