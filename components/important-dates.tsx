@@ -113,9 +113,46 @@ export function ImportantDates() {
                     itemRefs.current[index] = el
                   }}
                   data-index={index}
-                  className={`flex items-center gap-4 md:gap-8 flex-row md:${isLeft ? "flex-row" : "flex-row-reverse"}`}
+                  className="flex items-center gap-4 md:gap-8"
                 >
-                  <div className="relative flex items-center justify-center flex-shrink-0 md:order-none order-first">
+                  {/* Left content - shows on even indexes (0, 2) on desktop */}
+                  <div className={`hidden md:block md:w-[calc(50%-2rem)] ${isLeft ? "" : "order-3"}`}>
+                    {isLeft && (
+                      <div
+                        className={`p-4 md:p-6 rounded-xl backdrop-blur-md border transition-all duration-700 hover:scale-105 ${
+                          isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-12"
+                        } ${
+                          isHighlight
+                            ? "bg-primary/10 dark:bg-primary/20 border-primary shadow-lg shadow-primary/20"
+                            : isNextDeadline
+                              ? "bg-white dark:bg-gray-900 border-primary animate-pulse-border"
+                              : "bg-white dark:bg-gray-900 border-gray-200 dark:border-gray-800 hover:border-primary/50"
+                        }`}
+                      >
+                        <div className="flex items-start gap-3 md:gap-4">
+                          <div
+                            className={`p-2 rounded-lg flex-shrink-0 ${isHighlight ? "bg-primary/30" : "bg-primary/10"}`}
+                          >
+                            {isHighlight ? (
+                              <CheckCircle className="w-4 h-4 md:w-5 md:h-5 text-primary" />
+                            ) : (
+                              <Clock className="w-4 h-4 md:w-5 md:h-5 text-primary" />
+                            )}
+                          </div>
+                          <div className="flex-1 min-w-0">
+                            <p className="text-primary font-bold text-base md:text-lg mb-1">{item.date}</p>
+                            <h3 className="text-gray-900 dark:text-white font-semibold text-lg md:text-xl mb-1 md:mb-2">
+                              {item.title}
+                            </h3>
+                            <p className="text-gray-600 dark:text-gray-400 text-xs md:text-sm">{item.description}</p>
+                          </div>
+                        </div>
+                      </div>
+                    )}
+                  </div>
+
+                  {/* Center dot */}
+                  <div className="relative flex items-center justify-center flex-shrink-0 md:order-2 order-first">
                     <div
                       className={`w-4 h-4 md:w-5 md:h-5 rounded-full border-4 transition-all duration-500 ${
                         isVisible
@@ -130,47 +167,75 @@ export function ImportantDates() {
                     )}
                   </div>
 
-                  <div
-                    className={`flex-1 md:w-[calc(50%-2rem)] md:flex-none transition-all duration-700 ${
-                      isVisible
-                        ? "opacity-100 translate-x-0"
-                        : isLeft
-                          ? "opacity-0 md:-translate-x-12"
-                          : "opacity-0 md:translate-x-12"
-                    }`}
-                  >
-                    <div
-                      className={`p-4 md:p-6 rounded-xl backdrop-blur-md border transition-all duration-300 hover:scale-105 ${
-                        isHighlight
-                          ? "bg-primary/10 dark:bg-primary/20 border-primary shadow-lg shadow-primary/20"
-                          : isNextDeadline
-                            ? "bg-white dark:bg-gray-900 border-primary animate-pulse-border"
-                            : "bg-white dark:bg-gray-900 border-gray-200 dark:border-gray-800 hover:border-primary/50"
-                      }`}
-                    >
-                      <div className="flex items-start gap-3 md:gap-4">
-                        <div
-                          className={`p-2 rounded-lg flex-shrink-0 ${isHighlight ? "bg-primary/30" : "bg-primary/10"}`}
-                        >
-                          {isHighlight ? (
-                            <CheckCircle className="w-4 h-4 md:w-5 md:h-5 text-primary" />
-                          ) : (
-                            <Clock className="w-4 h-4 md:w-5 md:h-5 text-primary" />
-                          )}
-                        </div>
-                        <div className="flex-1 min-w-0">
-                          <p className="text-primary font-bold text-base md:text-lg mb-1">{item.date}</p>
-                          <h3 className="text-gray-900 dark:text-white font-semibold text-lg md:text-xl mb-1 md:mb-2">
-                            {item.title}
-                          </h3>
-                          <p className="text-gray-600 dark:text-gray-400 text-xs md:text-sm">{item.description}</p>
+                  {/* Right content - shows on odd indexes (1, 3) on desktop, all items on mobile */}
+                  <div className={`flex-1 md:w-[calc(50%-2rem)] md:flex-none ${isLeft ? "md:order-3" : "order-1"}`}>
+                    {/* Mobile view - always show */}
+                    <div className="md:hidden">
+                      <div
+                        className={`p-4 rounded-xl backdrop-blur-md border transition-all duration-700 hover:scale-105 ${
+                          isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-12"
+                        } ${
+                          isHighlight
+                            ? "bg-primary/10 dark:bg-primary/20 border-primary shadow-lg shadow-primary/20"
+                            : isNextDeadline
+                              ? "bg-white dark:bg-gray-900 border-primary animate-pulse-border"
+                              : "bg-white dark:bg-gray-900 border-gray-200 dark:border-gray-800 hover:border-primary/50"
+                        }`}
+                      >
+                        <div className="flex items-start gap-3">
+                          <div
+                            className={`p-2 rounded-lg flex-shrink-0 ${isHighlight ? "bg-primary/30" : "bg-primary/10"}`}
+                          >
+                            {isHighlight ? (
+                              <CheckCircle className="w-4 h-4 text-primary" />
+                            ) : (
+                              <Clock className="w-4 h-4 text-primary" />
+                            )}
+                          </div>
+                          <div className="flex-1 min-w-0">
+                            <p className="text-primary font-bold text-base mb-1">{item.date}</p>
+                            <h3 className="text-gray-900 dark:text-white font-semibold text-lg mb-1">
+                              {item.title}
+                            </h3>
+                            <p className="text-gray-600 dark:text-gray-400 text-xs">{item.description}</p>
+                          </div>
                         </div>
                       </div>
                     </div>
+                    {/* Desktop view - only show for right side items */}
+                    {!isLeft && (
+                      <div
+                        className={`hidden md:block p-4 md:p-6 rounded-xl backdrop-blur-md border transition-all duration-700 hover:scale-105 ${
+                          isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-12"
+                        } ${
+                          isHighlight
+                            ? "bg-primary/10 dark:bg-primary/20 border-primary shadow-lg shadow-primary/20"
+                            : isNextDeadline
+                              ? "bg-white dark:bg-gray-900 border-primary animate-pulse-border"
+                              : "bg-white dark:bg-gray-900 border-gray-200 dark:border-gray-800 hover:border-primary/50"
+                        }`}
+                      >
+                        <div className="flex items-start gap-3 md:gap-4">
+                          <div
+                            className={`p-2 rounded-lg flex-shrink-0 ${isHighlight ? "bg-primary/30" : "bg-primary/10"}`}
+                          >
+                            {isHighlight ? (
+                              <CheckCircle className="w-4 h-4 md:w-5 md:h-5 text-primary" />
+                            ) : (
+                              <Clock className="w-4 h-4 md:w-5 md:h-5 text-primary" />
+                            )}
+                          </div>
+                          <div className="flex-1 min-w-0">
+                            <p className="text-primary font-bold text-base md:text-lg mb-1">{item.date}</p>
+                            <h3 className="text-gray-900 dark:text-white font-semibold text-lg md:text-xl mb-1 md:mb-2">
+                              {item.title}
+                            </h3>
+                            <p className="text-gray-600 dark:text-gray-400 text-xs md:text-sm">{item.description}</p>
+                          </div>
+                        </div>
+                      </div>
+                    )}
                   </div>
-
-                  {/* Empty space */}
-                  <div className="hidden md:block md:w-[calc(50%-2rem)]" />
                 </div>
               )
             })}
