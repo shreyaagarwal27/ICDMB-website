@@ -203,10 +203,9 @@ export function TravelAttractionsSection() {
             <div className="bg-white dark:bg-gray-800 rounded-xl overflow-hidden border border-gray-200 dark:border-gray-700 hover:border-primary/50 transition-all duration-300 group">
               <div className="relative overflow-hidden h-40 bg-gray-200 dark:bg-gray-600">
                 <img
-                  src="https://live.staticflickr.com/324/18436724501_1ea300a525.jpg"
+                  src="/images/bhimbetka-rock-shelters.jpg"
                   alt="Bhimbetka Rock Shelters"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  crossOrigin="anonymous"
                 />
               </div>
               <div className="p-5">
