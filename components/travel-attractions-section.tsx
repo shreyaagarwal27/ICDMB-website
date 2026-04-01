@@ -156,19 +156,19 @@ export function TravelAttractionsSection() {
               </div>
             </div>
 
-            {/* Manubhan Tekri */}
+            {/* Manuabhan Tekri */}
             <div className="bg-white dark:bg-gray-800 rounded-xl overflow-hidden border border-gray-200 dark:border-gray-700 hover:border-primary/50 transition-all duration-300 group">
               <div className="relative overflow-hidden h-40 bg-gray-200 dark:bg-gray-600">
                 <img
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/images%20%281%29-9sPSLUIch3vu4jM8I5LzWVsyiifIUa.jpg"
-                  alt="Manubhan Tekri"
+                  alt="Manuabhan Tekri"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
               <div className="p-5">
                 <div className="flex items-start gap-2 mb-3">
                   <MapPin className="w-4 h-4 text-primary shrink-0 mt-1" />
-                  <h3 className="font-serif text-lg font-semibold text-gray-900 dark:text-white">Manubhan Tekri</h3>
+                  <h3 className="font-serif text-lg font-semibold text-gray-900 dark:text-white">Manuabhan Tekri</h3>
                 </div>
                 <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
                   Manuabhan Tekri is located on a hill from where you have magnificent view of the city of lakes.
