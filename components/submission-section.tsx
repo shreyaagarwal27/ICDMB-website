@@ -126,13 +126,15 @@ export function SubmissionSection() {
                 <FileText className="w-4 h-4" />
                 Submit Full Paper
               </a>
-              <button
-                disabled
-                className="inline-flex items-center justify-center gap-2 border border-gray-400 dark:border-gray-600 text-gray-500 dark:text-gray-400 font-semibold px-6 py-3 rounded-lg cursor-not-allowed opacity-60"
+              <a
+                href="https://docs.google.com/document/d/1ntDdyYn_QRJEyX5nAs12N7Qfew58ALXK/edit?usp=sharing&ouid=105638565090162498509&rtpof=true&sd=true"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 border border-primary text-primary hover:bg-primary/10 font-semibold px-6 py-3 rounded-lg transition-colors"
               >
                 <Download className="w-4 h-4" />
-                Format (Coming Soon)
-              </button>
+                Paper Template
+              </a>
             </div>
           </div>
         </div>
