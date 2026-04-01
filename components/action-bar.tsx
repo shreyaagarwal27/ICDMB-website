@@ -69,9 +69,12 @@ export function ActionBar() {
             <Button
               size="lg"
               className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-base font-semibold shadow-lg shadow-primary/25"
+              asChild
             >
-              <FileText className="w-5 h-5 mr-2" />
-              Submit Full Paper
+              <a href="https://cmt3.research.microsoft.com/ICDMB2026" target="_blank" rel="noopener noreferrer">
+                <FileText className="w-5 h-5 mr-2" />
+                Submit Full Paper
+              </a>
             </Button>
             <Button
               size="lg"
