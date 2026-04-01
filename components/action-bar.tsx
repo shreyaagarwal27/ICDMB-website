@@ -80,9 +80,12 @@ export function ActionBar() {
               size="lg"
               variant="outline"
               className="border-primary text-primary hover:bg-primary/10 dark:hover:bg-primary/20 px-8 py-6 text-base font-semibold bg-white dark:bg-transparent"
+              asChild
             >
-              <Download className="w-5 h-5 mr-2" />
-              Download Brochure
+              <a href="/brochure/ICDMB_2026_Brochure.pdf" download="ICDMB_2026_Brochure.pdf">
+                <Download className="w-5 h-5 mr-2" />
+                Download Brochure
+              </a>
             </Button>
           </div>
         </div>
