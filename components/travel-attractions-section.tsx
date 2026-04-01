@@ -179,23 +179,22 @@ export function TravelAttractionsSection() {
               </div>
             </div>
 
-            {/* Taj-ul-Masajid */}
+            {/* Ratapani Jungle Lodge */}
             <div className="bg-white dark:bg-gray-800 rounded-xl overflow-hidden border border-gray-200 dark:border-gray-700 hover:border-primary/50 transition-all duration-300 group">
               <div className="relative overflow-hidden h-40 bg-gray-200 dark:bg-gray-600">
                 <img
-                  src="https://live.staticflickr.com/324/18436724501_1ea300a525.jpg"
-                  alt="Taj-ul-Masajid"
+                  src="/images/ratapani-jungle-lodge.jpg"
+                  alt="Ratapani Jungle Lodge"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  crossOrigin="anonymous"
                 />
               </div>
               <div className="p-5">
                 <div className="flex items-start gap-2 mb-3">
                   <MapPin className="w-4 h-4 text-primary flex-shrink-0 mt-1" />
-                  <h3 className="font-serif text-lg font-semibold text-gray-900 dark:text-white">Taj-ul-Masajid</h3>
+                  <h3 className="font-serif text-lg font-semibold text-gray-900 dark:text-white">Ratapani Jungle Lodge</h3>
                 </div>
                 <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
-                  One of the largest mosques in India, showcasing beautiful Indo-Islamic architecture.
+                  RJL is a Jungle & Wildlife Safari Lodge, situated barely 30 Kms from the City of Bhopal, on the fringes of the upcoming Ratapani Tiger Reserve.
                 </p>
               </div>
             </div>
