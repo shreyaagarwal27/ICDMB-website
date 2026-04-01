@@ -113,23 +113,9 @@ export function ImportantDates() {
                     itemRefs.current[index] = el
                   }}
                   data-index={index}
-                  className={`flex items-center gap-4 md:gap-8 flex-row md:${isLeft ? "flex-row" : "flex-row-reverse"}`}
+                  className={`flex items-center gap-4 md:gap-8 ${isLeft ? "flex-row" : "flex-row-reverse"}`}
                 >
-                  <div className="relative flex items-center justify-center flex-shrink-0 md:order-none order-first">
-                    <div
-                      className={`w-4 h-4 md:w-5 md:h-5 rounded-full border-4 transition-all duration-500 ${
-                        isVisible
-                          ? isHighlight
-                            ? "bg-primary border-primary shadow-lg shadow-primary/50 scale-125"
-                            : "bg-primary border-primary shadow-md shadow-primary/30"
-                          : "bg-gray-300 dark:bg-gray-800 border-gray-400 dark:border-gray-700"
-                      }`}
-                    />
-                    {isHighlight && isVisible && (
-                      <div className="absolute w-6 h-6 md:w-8 md:h-8 rounded-full bg-primary/30 animate-ping" />
-                    )}
-                  </div>
-
+                  {/* Content Card */}
                   <div
                     className={`flex-1 md:w-[calc(50%-2rem)] md:flex-none transition-all duration-700 ${
                       isVisible
@@ -169,7 +155,23 @@ export function ImportantDates() {
                     </div>
                   </div>
 
-                  {/* Empty space */}
+                  {/* Center Timeline Dot */}
+                  <div className="relative flex items-center justify-center flex-shrink-0">
+                    <div
+                      className={`w-4 h-4 md:w-5 md:h-5 rounded-full border-4 transition-all duration-500 ${
+                        isVisible
+                          ? isHighlight
+                            ? "bg-primary border-primary shadow-lg shadow-primary/50 scale-125"
+                            : "bg-primary border-primary shadow-md shadow-primary/30"
+                          : "bg-gray-300 dark:bg-gray-800 border-gray-400 dark:border-gray-700"
+                      }`}
+                    />
+                    {isHighlight && isVisible && (
+                      <div className="absolute w-6 h-6 md:w-8 md:h-8 rounded-full bg-primary/30 animate-ping" />
+                    )}
+                  </div>
+
+                  {/* Empty space on opposite side */}
                   <div className="hidden md:block md:w-[calc(50%-2rem)]" />
                 </div>
               )
