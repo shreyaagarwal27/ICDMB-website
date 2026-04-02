@@ -192,7 +192,11 @@ export function RegistrationSection() {
                   <p className="font-mono font-medium text-gray-900 dark:text-white">SBIN0001608</p>
                 </div>
                 <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
-                  <p className="text-xs text-gray-500 dark:text-gray-400 mb-1">SWIFT Code / IBAN Number</p>
+                  <p className="text-xs text-gray-500 dark:text-gray-400 mb-1">SWIFT Code</p>
+                  <p className="font-mono font-medium text-gray-900 dark:text-white">SBININBB</p>
+                </div>
+                <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
+                  <p className="text-xs text-gray-500 dark:text-gray-400 mb-1">IBAN Number</p>
                   <p className="font-mono font-medium text-gray-900 dark:text-white">SBININBB268</p>
                 </div>
               </div>
