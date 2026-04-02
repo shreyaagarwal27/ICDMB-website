@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Sparkles } from "lucide-react"
+import { Sparkles, Building2, AlertCircle } from "lucide-react"
 
 const registrationData = [
   {
@@ -150,7 +150,66 @@ export function RegistrationSection() {
           ))}
         </div>
 
-        
+        {/* Payment Account Details */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          className="mt-12"
+        >
+          <div className="rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 shadow-xl shadow-primary/5 overflow-hidden">
+            {/* Header */}
+            <div className="relative px-6 py-4 bg-gray-50 dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700">
+              <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-primary to-transparent opacity-60" />
+              <div className="flex items-center gap-3">
+                <Building2 className="w-5 h-5 text-primary" />
+                <h3 className="font-semibold text-gray-900 dark:text-white text-lg">Payment Account Details</h3>
+              </div>
+            </div>
+
+            {/* Bank Details Grid */}
+            <div className="p-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
+                  <p className="text-xs text-gray-500 dark:text-gray-400 mb-1">Bank Name</p>
+                  <p className="font-medium text-gray-900 dark:text-white">State Bank of India</p>
+                </div>
+                <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
+                  <p className="text-xs text-gray-500 dark:text-gray-400 mb-1">Name</p>
+                  <p className="font-medium text-gray-900 dark:text-white">MANIT, Bhopal</p>
+                </div>
+                <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
+                  <p className="text-xs text-gray-500 dark:text-gray-400 mb-1">Account Name</p>
+                  <p className="font-medium text-gray-900 dark:text-white">Director, MANIT Bhopal</p>
+                </div>
+                <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
+                  <p className="text-xs text-gray-500 dark:text-gray-400 mb-1">Account Number</p>
+                  <p className="font-mono font-medium text-gray-900 dark:text-white">10020150107</p>
+                </div>
+                <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
+                  <p className="text-xs text-gray-500 dark:text-gray-400 mb-1">IFSC Code</p>
+                  <p className="font-mono font-medium text-gray-900 dark:text-white">SBIN0001608</p>
+                </div>
+                <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
+                  <p className="text-xs text-gray-500 dark:text-gray-400 mb-1">SWIFT Code / IBAN Number</p>
+                  <p className="font-mono font-medium text-gray-900 dark:text-white">SBININBB268</p>
+                </div>
+              </div>
+
+              {/* Important Note */}
+              <div className="mt-6 flex items-start gap-3 p-4 bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700/50 rounded-lg">
+                <AlertCircle className="w-5 h-5 text-amber-600 dark:text-amber-500 shrink-0 mt-0.5" />
+                <div>
+                  <p className="font-medium text-amber-800 dark:text-amber-400">Important Note</p>
+                  <p className="text-sm text-amber-700 dark:text-amber-300 mt-1">
+                    Please mention <span className="font-semibold">&quot;ICDMB26 Registration Fee&quot;</span> in the payment remarks.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </motion.div>
       </div>
     </section>
   )
