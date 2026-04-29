@@ -5,7 +5,7 @@ import { Calendar, CheckCircle, Clock } from "lucide-react"
 
 const dates = [
   {
-    date: "30th April 2026",
+    date: "15th June 2026",
     title: "Full Paper Submission",
     description: "Full paper submission deadline",
     status: "upcoming",
