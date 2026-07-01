@@ -23,12 +23,6 @@ const leadershipTeam = [
     designation: "HOD, ME, MANIT Bhopal",
     image: "/images/dr-kr-aharwal.png",
   },
-  {
-    role: "Co-Chairman",
-    name: "Dr. C. M. Krishna",
-    designation: "HOC, CEPDSM, MANIT Bhopal",
-    image: "/images/dr-cmk.jpg",
-  },
 ]
 
 // Organizing Secretaries
