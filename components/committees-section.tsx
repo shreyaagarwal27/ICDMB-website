@@ -125,6 +125,8 @@ const studentsCommittee = [
   "Ankit Dwivedi",
   "Mahendra Soni",
   "Ajay Kumar Singh",
+  "Shreya Agarwal",
+  "Akshita Patidar",
 ]
 
 
