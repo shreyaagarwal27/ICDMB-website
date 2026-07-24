@@ -31,7 +31,7 @@ const prominentSpeakers = [
     name: "Dr. Tarun Gupta",
     designation: "Professor, Department of Industrial and Entrepreneurial Engineering and Engineering Management",
     institution: "Western Michigan University",
-    image: "/images/placeholder.svg",
+    image: "/images/tarun-gupta.jpg",
   },
 ]
 
