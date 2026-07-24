@@ -37,7 +37,7 @@ const prominentSpeakers = [
     name: "Dr. Prateek Behera",
     designation: "Doctor",
     institution: "Department of Orthopaedics, AIIMS Bhopal",
-    image: "/images/placeholder.svg",
+    image: "/images/prateek-behera.jpg",
   },
   {
     name: "Dr. Chetan Nikhare",
