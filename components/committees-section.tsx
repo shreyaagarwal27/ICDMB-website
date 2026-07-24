@@ -61,8 +61,8 @@ const prominentSpeakers = [
   },
   {
     name: "Dr. Dilip Kumar Pratihar",
-    designation: "Professor",
-    institution: "IIT Kharagpur",
+    designation: "Professor, Department of Mechanical Engineering",
+    institution: "IIT Kharagpur, West Bengal, India",
     image: "/images/dilip-kumar-pratihar.jpg",
     objectPosition: "center 25%",
   },
