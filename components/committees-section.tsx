@@ -49,8 +49,8 @@ const prominentSpeakers = [
   },
   {
     name: "Prof. Chandra Sekher Yerramalli",
-    designation: "Professor",
-    institution: "",
+    designation: "Professor, Department of Aerospace Engineering",
+    institution: "IIT Bombay, Maharashtra, India",
     image: "/images/chandra-sekher-yerramalli.jpg",
   },
   {
