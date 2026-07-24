@@ -33,6 +33,36 @@ const prominentSpeakers = [
     institution: "Western Michigan University",
     image: "/images/tarun-gupta.jpg",
   },
+  {
+    name: "Dr. Prateek Behera",
+    designation: "Doctor",
+    institution: "Department of Orthopaedics, AIIMS Bhopal",
+    image: "/images/placeholder.svg",
+  },
+  {
+    name: "Dr. Chetan Nikhare",
+    designation: "Professor, Mechanical Engineering",
+    institution: "The Behrend College, USA",
+    image: "/images/placeholder.svg",
+  },
+  {
+    name: "Prof. Chandra Sekher Yerramalli",
+    designation: "Professor",
+    institution: "",
+    image: "/images/placeholder.svg",
+  },
+  {
+    name: "Dr. Ashish B. Deoghare",
+    designation: "Associate Professor",
+    institution: "",
+    image: "/images/placeholder.svg",
+  },
+  {
+    name: "Dr. Dilip Kumar Pratihar",
+    designation: "Professor",
+    institution: "IIT Kharagpur",
+    image: "/images/placeholder.svg",
+  },
 ]
 
 // Organizing Secretaries
