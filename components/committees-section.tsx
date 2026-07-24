@@ -115,6 +115,7 @@ const technicalCommittee = [
   "Dr. N. Jayanth",
   "Dr. Kuldeep Yadav",
   "Dr. S Krishnan",
+  "Dr. C.M. Krishnan",
 ]
 
 // Students Organisation Committee
