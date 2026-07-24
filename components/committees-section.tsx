@@ -262,7 +262,7 @@ export function CommitteesSection() {
                     alt={speaker.name}
                     width={128}
                     height={128}
-                    className="w-full h-full object-contain"
+                    className="w-full h-full object-cover object-center"
                   />
                 </div>
                 <span className="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-medium rounded-full mb-3">
