@@ -55,8 +55,8 @@ const prominentSpeakers = [
   },
   {
     name: "Dr. Ashish B. Deoghare",
-    designation: "Associate Professor",
-    institution: "",
+    designation: "Associate Professor, Department of Mechanical Engineering",
+    institution: "NIT Silchar, Assam, India",
     image: "/images/ashish-b-deoghare.jpg",
   },
   {
