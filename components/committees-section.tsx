@@ -45,6 +45,7 @@ const prominentSpeakers = [
     designation: "Professor, Mechanical Engineering",
     institution: "The Behrend College, USA",
     image: "/images/chetan-nikhare.jpg",
+    objectPosition: "center 30%",
   },
   {
     name: "Prof. Chandra Sekher Yerramalli",
