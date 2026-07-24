@@ -42,8 +42,8 @@ const prominentSpeakers = [
   },
   {
     name: "Dr. Chetan Nikhare",
-    designation: "Professor, Mechanical Engineering",
-    institution: "The Behrend College, USA",
+    designation: "Professor, Department of Mechanical Engineering",
+    institution: "Penn State Erie, The Behrend College, USA",
     image: "/images/chetan-nikhare.jpg",
     objectPosition: "center 30%",
   },
