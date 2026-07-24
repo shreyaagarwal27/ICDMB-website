@@ -12,21 +12,12 @@ export function ActionBar() {
     seconds: 0,
   })
 
-  const [submissionTimeLeft, setSubmissionTimeLeft] = useState({
-    days: 0,
-    hours: 0,
-    minutes: 0,
-    seconds: 0,
-  })
-
   useEffect(() => {
     const deadline = new Date("2026-10-08T00:00:00").getTime()
-    const submissionDeadline = new Date("2026-08-30T00:00:00").getTime()
 
     const timer = setInterval(() => {
       const now = new Date().getTime()
       const distance = deadline - now
-      const submissionDistance = submissionDeadline - now
 
       if (distance > 0) {
         setTimeLeft({
@@ -34,15 +25,6 @@ export function ActionBar() {
           hours: Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
           minutes: Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)),
           seconds: Math.floor((distance % (1000 * 60)) / 1000),
-        })
-      }
-
-      if (submissionDistance > 0) {
-        setSubmissionTimeLeft({
-          days: Math.floor(submissionDistance / (1000 * 60 * 60 * 24)),
-          hours: Math.floor((submissionDistance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
-          minutes: Math.floor((submissionDistance % (1000 * 60 * 60)) / (1000 * 60)),
-          seconds: Math.floor((submissionDistance % (1000 * 60)) / 1000),
         })
       }
     }, 1000)
@@ -54,63 +36,31 @@ export function ActionBar() {
     <section className="bg-gray-100 dark:bg-gray-950 border-y border-gray-200 dark:border-gray-800 py-8">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
-          <div className="w-full lg:w-auto flex flex-col lg:flex-row gap-8">
-            {/* Countdown Timer */}
-            <div className="flex flex-col items-center lg:items-start gap-3">
-              <div className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400">
-                <Clock className="w-4 h-4 text-primary" />
-                <span>Time until Conference Start</span>
-              </div>
-              <div className="flex items-center gap-3 sm:gap-4">
-                {[
-                  { value: timeLeft.days, label: "Days" },
-                  { value: timeLeft.hours, label: "Hours" },
-                  { value: timeLeft.minutes, label: "Mins" },
-                  { value: timeLeft.seconds, label: "Secs" },
-                ].map((item, index) => (
-                  <div key={item.label} className="flex items-center gap-3 sm:gap-4">
-                    <div className="text-center">
-                      <div className="bg-white dark:bg-gray-900 border border-gray-300 dark:border-gray-700 rounded-lg px-3 sm:px-4 py-2 min-w-[60px] shadow-sm">
-                        <span className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white font-mono">
-                          {String(item.value).padStart(2, "0")}
-                        </span>
-                      </div>
-                      <span className="text-xs text-gray-500 dark:text-gray-400 mt-1 block">{item.label}</span>
-                    </div>
-                    {index < 3 && <span className="text-2xl text-gray-400 dark:text-gray-600 font-light">:</span>}
-                  </div>
-                ))}
-              </div>
+          {/* Countdown Timer */}
+          <div className="flex flex-col items-center lg:items-start gap-3">
+            <div className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400">
+              <Clock className="w-4 h-4 text-primary" />
+              <span>Time until Conference Start</span>
             </div>
-
-            {/* Full Paper Submission Deadline */}
-            <div className="hidden lg:block w-px bg-gray-300 dark:bg-gray-700" />
-
-            <div className="flex flex-col items-center lg:items-start gap-3">
-              <div className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400">
-                <Clock className="w-4 h-4 text-blue-500" />
-                <span>Full Paper Submission</span>
-              </div>
-              <div className="flex items-center gap-3 sm:gap-4">
-                {[
-                  { value: submissionTimeLeft.days, label: "Days" },
-                  { value: submissionTimeLeft.hours, label: "Hours" },
-                  { value: submissionTimeLeft.minutes, label: "Mins" },
-                  { value: submissionTimeLeft.seconds, label: "Secs" },
-                ].map((item, index) => (
-                  <div key={item.label} className="flex items-center gap-3 sm:gap-4">
-                    <div className="text-center">
-                      <div className="bg-white dark:bg-gray-900 border border-blue-300 dark:border-blue-700 rounded-lg px-3 sm:px-4 py-2 min-w-[60px] shadow-sm">
-                        <span className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white font-mono">
-                          {String(item.value).padStart(2, "0")}
-                        </span>
-                      </div>
-                      <span className="text-xs text-gray-500 dark:text-gray-400 mt-1 block">{item.label}</span>
+            <div className="flex items-center gap-3 sm:gap-4">
+              {[
+                { value: timeLeft.days, label: "Days" },
+                { value: timeLeft.hours, label: "Hours" },
+                { value: timeLeft.minutes, label: "Mins" },
+                { value: timeLeft.seconds, label: "Secs" },
+              ].map((item, index) => (
+                <div key={item.label} className="flex items-center gap-3 sm:gap-4">
+                  <div className="text-center">
+                    <div className="bg-white dark:bg-gray-900 border border-gray-300 dark:border-gray-700 rounded-lg px-3 sm:px-4 py-2 min-w-[60px] shadow-sm">
+                      <span className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white font-mono">
+                        {String(item.value).padStart(2, "0")}
+                      </span>
                     </div>
-                    {index < 3 && <span className="text-2xl text-gray-400 dark:text-gray-600 font-light">:</span>}
+                    <span className="text-xs text-gray-500 dark:text-gray-400 mt-1 block">{item.label}</span>
                   </div>
-                ))}
-              </div>
+                  {index < 3 && <span className="text-2xl text-gray-400 dark:text-gray-600 font-light">:</span>}
+                </div>
+              ))}
             </div>
           </div>
 
