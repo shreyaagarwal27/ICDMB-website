@@ -87,6 +87,7 @@ const technicalCommittee = [
   "Dr. R.M. Sarviya",
   "Dr. Siraj Ahmed",
   "Dr. J. L. Bhagoria",
+  "Dr. C.M. Krishnan",
   "Dr. R. K. Dwivedi",
   "Dr. V. K. Soni",
   "Dr. Atul Lanjewar",
@@ -115,7 +116,6 @@ const technicalCommittee = [
   "Dr. N. Jayanth",
   "Dr. Kuldeep Yadav",
   "Dr. S Krishnan",
-  "Dr. C.M. Krishnan",
 ]
 
 // Students Organisation Committee
