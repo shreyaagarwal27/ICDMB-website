@@ -49,7 +49,7 @@ const prominentSpeakers = [
     name: "Prof. Chandra Sekher Yerramalli",
     designation: "Professor",
     institution: "",
-    image: "/images/placeholder.svg",
+    image: "/images/chandra-sekher-yerramalli.jpg",
   },
   {
     name: "Dr. Ashish B. Deoghare",
