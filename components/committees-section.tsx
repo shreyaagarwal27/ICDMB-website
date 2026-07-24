@@ -32,6 +32,7 @@ const prominentSpeakers = [
     designation: "Professor, Department of Industrial and Entrepreneurial Engineering and Engineering Management",
     institution: "Western Michigan University",
     image: "/images/tarun-gupta.jpg",
+    objectPosition: "center 20%",
   },
   {
     name: "Dr. Prateek Behera",
@@ -262,7 +263,8 @@ export function CommitteesSection() {
                     alt={speaker.name}
                     width={128}
                     height={128}
-                    className="w-full h-full object-cover object-center"
+                    className="w-full h-full object-cover"
+                    style={speaker.objectPosition ? { objectPosition: speaker.objectPosition } : { objectPosition: "center" }}
                   />
                 </div>
                 <span className="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-medium rounded-full mb-3">
