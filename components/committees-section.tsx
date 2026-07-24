@@ -55,7 +55,7 @@ const prominentSpeakers = [
     name: "Dr. Ashish B. Deoghare",
     designation: "Associate Professor",
     institution: "",
-    image: "/images/placeholder.svg",
+    image: "/images/ashish-b-deoghare.jpg",
   },
   {
     name: "Dr. Dilip Kumar Pratihar",
