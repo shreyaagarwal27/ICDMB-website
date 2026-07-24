@@ -64,6 +64,7 @@ const prominentSpeakers = [
     designation: "Professor",
     institution: "IIT Kharagpur",
     image: "/images/dilip-kumar-pratihar.jpg",
+    objectPosition: "center 25%",
   },
 ]
 
