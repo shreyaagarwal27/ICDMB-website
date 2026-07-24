@@ -43,7 +43,7 @@ const prominentSpeakers = [
     name: "Dr. Chetan Nikhare",
     designation: "Professor, Mechanical Engineering",
     institution: "The Behrend College, USA",
-    image: "/images/placeholder.svg",
+    image: "/images/chetan-nikhare.jpg",
   },
   {
     name: "Prof. Chandra Sekher Yerramalli",
