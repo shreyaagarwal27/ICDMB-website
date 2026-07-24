@@ -37,7 +37,7 @@ const prominentSpeakers = [
   {
     name: "Dr. Prateek Behera",
     designation: "Doctor",
-    institution: "Department of Orthopaedics, AIIMS Bhopal",
+    institution: "Department of Orthopaedics, All India Institute of Medical Sciences, Bhopal, India",
     image: "/images/prateek-behera.jpg",
   },
   {
