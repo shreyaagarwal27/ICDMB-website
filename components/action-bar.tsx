@@ -97,7 +97,7 @@ export function ActionBar() {
             <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400">
               <span className="text-gray-900 dark:text-white font-semibold">Last Date for Full Paper Submission</span>
               <span className="mx-2">:</span>
-              <span className="text-blue-600 dark:text-blue-400 font-semibold">30th August 2026</span>
+              <span className="text-blue-600 dark:text-blue-400 font-semibold">10th September 2026</span>
             </p>
           </div>
         </div>
