@@ -14,21 +14,8 @@ export const metadata: Metadata = {
     "International Conference on Advanced Design, Materials & Biomedical Engineering - October 08-09, 2026 at MANIT Bhopal, India. First Announcement and Call for Papers.",
   generator: "v0.app",
   icons: {
-    icon: [
-      {
-        url: "/icon-light-32x32.png",
-        media: "(prefers-color-scheme: light)",
-      },
-      {
-        url: "/icon-dark-32x32.png",
-        media: "(prefers-color-scheme: dark)",
-      },
-      {
-        url: "/icon.svg",
-        type: "image/svg+xml",
-      },
-    ],
-    apple: "/apple-icon.png",
+    icon: "/images/icdmb-logo.png",
+    apple: "/images/icdmb-logo.png",
   },
 }
 
