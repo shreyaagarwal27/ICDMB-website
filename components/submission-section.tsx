@@ -3,7 +3,7 @@
 import { FileText, Users, Download, CheckCircle2, ArrowRight } from "lucide-react"
 
 const academiaSteps = [
-  { step: 1, title: "Full Paper Submission", description: "Submit full paper (10-12 pages) in prescribed format via email" },
+  { step: 1, title: "Full Paper Submission", description: "Submit full paper (10-12 pages) in prescribed format via CMT portal mentioned in the submission bottom" },
   { step: 2, title: "Review Process", description: "Papers reviewed for high standards (Plagiarism < 15%, AI content = 0%)" },
   { step: 3, title: "Revised Manuscript", description: "Address review comments and submit revised manuscript" },
   { step: 4, title: "Final Acceptance", description: "Technical Committee reviews for final acceptance" },
