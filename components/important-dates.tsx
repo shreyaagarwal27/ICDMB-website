@@ -5,21 +5,27 @@ import { Calendar, CheckCircle, Clock } from "lucide-react"
 
 const dates = [
   {
-    date: "30th April 2026",
+    date: "10th September 2026",
     title: "Full Paper Submission",
     description: "Full paper submission deadline",
     status: "upcoming",
   },
   {
-    date: "5th July 2026",
-    title: "Registration of Authors",
-    description: "Author registration deadline",
+    date: "17th September 2026",
+    title: "Revised Paper Submission",
+    description: "Final revised paper submission",
     status: "upcoming",
   },
   {
-    date: "30th July 2026",
-    title: "Revised Paper Submission",
-    description: "Final revised paper submission",
+    date: "20th September 2026",
+    title: "Early Bird Registration",
+    description: "Early bird registration deadline",
+    status: "upcoming",
+  },
+  {
+    date: "30th September 2026",
+    title: "Registration Deadline",
+    description: "Final registration deadline",
     status: "upcoming",
   },
   {

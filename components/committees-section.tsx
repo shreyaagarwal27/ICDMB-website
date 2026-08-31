@@ -23,11 +23,48 @@ const leadershipTeam = [
     designation: "HOD, ME, MANIT Bhopal",
     image: "/images/dr-kr-aharwal.png",
   },
+]
+
+// Prominent Speakers
+const prominentSpeakers = [
   {
-    role: "Co-Chairman",
-    name: "Dr. C. M. Krishna",
-    designation: "HOC, CEPDSM, MANIT Bhopal",
-    image: "/images/dr-cmk.jpg",
+    name: "Dr. Tarun Gupta",
+    designation: "Professor, Department of Industrial and Entrepreneurial Engineering and Engineering Management",
+    institution: "Western Michigan University",
+    image: "/images/tarun-gupta.jpg",
+    objectPosition: "center 20%",
+  },
+  {
+    name: "Dr. Prateek Behera",
+    designation: "Doctor",
+    institution: "Department of Orthopaedics, All India Institute of Medical Sciences, Bhopal, India",
+    image: "/images/prateek-behera.jpg",
+  },
+  {
+    name: "Dr. Chetan Nikhare",
+    designation: "Professor, Department of Mechanical Engineering",
+    institution: "Penn State Erie, The Behrend College, USA",
+    image: "/images/chetan-nikhare.jpg",
+    objectPosition: "center 30%",
+  },
+  {
+    name: "Prof. Chandra Sekher Yerramalli",
+    designation: "Professor, Department of Aerospace Engineering",
+    institution: "IIT Bombay, Maharashtra, India",
+    image: "/images/chandra-sekher-yerramalli.jpg",
+  },
+  {
+    name: "Dr. Ashish B. Deoghare",
+    designation: "Associate Professor, Department of Mechanical Engineering",
+    institution: "NIT Silchar, Assam, India",
+    image: "/images/ashish-b-deoghare.jpg",
+  },
+  {
+    name: "Dr. Dilip Kumar Pratihar",
+    designation: "Professor, Department of Mechanical Engineering",
+    institution: "IIT Kharagpur, West Bengal, India",
+    image: "/images/dilip-kumar-pratihar.jpg",
+    objectPosition: "center 25%",
   },
 ]
 
@@ -93,6 +130,7 @@ const technicalCommittee = [
   "Dr. R.M. Sarviya",
   "Dr. Siraj Ahmed",
   "Dr. J. L. Bhagoria",
+  "Dr. C.M. Krishnan",
   "Dr. R. K. Dwivedi",
   "Dr. V. K. Soni",
   "Dr. Atul Lanjewar",
@@ -131,6 +169,8 @@ const studentsCommittee = [
   "Ankit Dwivedi",
   "Mahendra Soni",
   "Ajay Kumar Singh",
+  "Shreya Agarwal",
+  "Akshita Patidar",
 ]
 
 
@@ -194,6 +234,47 @@ export function CommitteesSection() {
                 </span>
                 <h4 className="text-gray-900 dark:text-white font-semibold mb-1">{member.name}</h4>
                 <p className="text-gray-600 dark:text-gray-400 text-sm">{member.designation}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+
+        {/* Section 1b: Prominent Speakers */}
+        <div className="mb-16">
+          <motion.h3
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="text-2xl font-semibold text-primary mb-8"
+          >
+            Prominent Speakers
+          </motion.h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {prominentSpeakers.map((speaker, index) => (
+              <motion.div
+                key={speaker.name}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+                className="bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-xl p-6 text-center hover:border-primary/50 transition-all duration-300 hover:shadow-lg dark:hover:shadow-primary/10 pt-20 mt-16 overflow-visible relative"
+              >
+                <div className="absolute -top-16 left-1/2 -translate-x-1/2 w-32 h-32 rounded-full bg-gradient-to-br from-primary/20 to-primary/10 border-4 border-primary/50 flex items-center justify-center overflow-hidden shadow-xl shadow-primary/20">
+                  <Image
+                    src={speaker.image || "/placeholder.svg"}
+                    alt={speaker.name}
+                    width={128}
+                    height={128}
+                    className="w-full h-full object-cover"
+                    style={speaker.objectPosition ? { objectPosition: speaker.objectPosition } : { objectPosition: "center" }}
+                  />
+                </div>
+                <span className="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-medium rounded-full mb-3">
+                  Speaker
+                </span>
+                <h4 className="text-gray-900 dark:text-white font-semibold mb-1">{speaker.name}</h4>
+                <p className="text-gray-600 dark:text-gray-400 text-sm mb-2">{speaker.designation}</p>
+                <p className="text-primary text-xs font-medium">{speaker.institution}</p>
               </motion.div>
             ))}
           </div>

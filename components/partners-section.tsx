@@ -15,7 +15,16 @@ export function PartnersSection() {
           <div className="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full" />
         </div>
 
-        
+        {/* Publisher Logos */}
+        <div className="mt-12 flex justify-center">
+          <div className="p-8 bg-white dark:bg-gray-800/80 backdrop-blur-sm rounded-xl border border-gray-200 dark:border-gray-700 shadow-lg">
+            <img 
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-4tPBBYp5cCoDmmK10r43rX8CI02JV8.png" 
+              alt="Atlantis Press and Springer Nature publisher logos" 
+              className="h-32 w-auto object-contain"
+            />
+          </div>
+        </div>
 
         <div className="mt-14 flex flex-col items-center justify-center gap-3">
           <div className="flex items-center justify-center gap-3 px-6 py-4 bg-white dark:bg-gray-800/80 backdrop-blur-sm rounded-xl border border-primary/20">

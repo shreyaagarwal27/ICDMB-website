@@ -90,16 +90,26 @@ export function ActionBar() {
           </div>
         </div>
 
-        {/* Venue & Date Info */}
+        {/* Paper Submission Deadline */}
         <div className="mt-8 pt-6 border-t border-gray-200 dark:border-gray-800">
           <div className="flex items-center justify-center gap-2 text-center">
-            <Calendar className="w-5 h-5 text-primary flex-shrink-0" />
+            <FileText className="w-5 h-5 text-blue-500 flex-shrink-0" />
             <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400">
-              <span className="text-gray-900 dark:text-white font-semibold">08-09th October 2026</span>
-              <span className="mx-2">|</span>
-              Dept. of Mechanical Engineering, MANIT Bhopal - 462003, MP, India
+              <span className="text-gray-900 dark:text-white font-semibold">Last Date for Full Paper Submission</span>
+              <span className="mx-2">:</span>
+              <span className="text-blue-600 dark:text-blue-400 font-semibold">10th September 2026</span>
             </p>
           </div>
+        </div>
+
+        {/* Venue & Date Info */}
+        <div className="mt-4 flex items-center justify-center gap-2 text-center">
+          <Calendar className="w-5 h-5 text-primary flex-shrink-0" />
+          <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400">
+            <span className="text-gray-900 dark:text-white font-semibold">08-09th October 2026</span>
+            <span className="mx-2">|</span>
+            Dept. of Mechanical Engineering, MANIT Bhopal - 462003, MP, India
+          </p>
         </div>
       </div>
     </section>
