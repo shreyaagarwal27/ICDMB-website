@@ -30,8 +30,7 @@ export function PartnersSection() {
           <div className="flex items-center justify-center gap-3 px-6 py-4 bg-white dark:bg-gray-800/80 backdrop-blur-sm rounded-xl border border-primary/20">
             <Award className="w-6 h-6 text-primary" />
             <span className="text-lg sm:text-xl font-medium text-gray-900 dark:text-white">
-              Selected papers will be published in <span className="text-primary font-semibold">Scopus-indexed</span>{" "}
-              journals
+              Submitted paper will be published in <span className="text-primary font-semibold">Scopus-index Journal</span>
             </span>
           </div>
         </div>
