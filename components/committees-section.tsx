@@ -186,7 +186,7 @@ const technicalCommittee = [
   "Dr. S Krishnan",
 ]
 
-// Students Organisation Committee
+// Student Organising Committee
 const studentsCommittee = [
   "Avinash Kumar",
   "Govind Das Tiwari",
@@ -446,7 +446,7 @@ export function CommitteesSection() {
           </motion.div>
         </div>
 
-        {/* Section 5: Students Organisation Committee */}
+        {/* Section 5: Student Organising Committee */}
         <div>
           <motion.h3
             initial={{ opacity: 0, x: -20 }}
@@ -454,7 +454,7 @@ export function CommitteesSection() {
             viewport={{ once: true }}
             className="text-2xl font-semibold text-primary mb-4"
           >
-            Students Organisation Committee
+            Student Organising Committee
           </motion.h3>
           <p className="text-gray-600 dark:text-gray-400 text-sm mb-6">MANIT Bhopal</p>
           <motion.div
