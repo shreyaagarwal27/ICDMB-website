@@ -171,7 +171,7 @@ const technicalCommittee = [
   "Dr. Arvind Kumar",
   "Dr. Ajay Verma",
   "Dr. P. K. Soni",
-  "Dr. Akhilesh Varshney",
+  "Dr. Akhilesh Soni",
   "Dr. Abhinav Varshney",
   "Dr. Vinod Yadav",
   "Dr. Mohammad Taufik",
