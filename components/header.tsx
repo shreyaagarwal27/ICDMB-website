@@ -25,12 +25,17 @@ export function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 dark:bg-gray-950/90 backdrop-blur-md border-b border-gray-200 dark:border-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          {/* ICDMB Logo - Extreme Left */}
-          <div className="flex-shrink-0">
+          {/* Conference Logos */}
+          <div className="flex flex-shrink-0 items-center gap-2 sm:gap-3">
             <img
               src="/images/icdmb-logo.png"
               alt="ICDMB 2026 Logo"
               className="w-14 h-14 sm:w-16 sm:h-16 object-contain"
+            />
+            <img
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ANRF%20Sponcership.jpg-WUZzdzeFrJW7vuzWgMoUAmZBFCG1Ox.jpeg"
+              alt="Anusandhan National Research Foundation logo"
+              className="h-12 w-24 sm:h-14 sm:w-32 object-contain"
             />
           </div>
 
