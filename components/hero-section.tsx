@@ -10,7 +10,7 @@ export function HeroSection() {
 
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-16">
         {/* Logos */}
-        <div className="flex items-center justify-center gap-8 sm:gap-12 mb-10">
+        <div className="flex items-center justify-center gap-5 sm:gap-8 md:gap-12 mb-10">
           <img
             src="/images/image-20-282-29.png"
             alt="MANIT Bhopal Logo"
@@ -20,6 +20,11 @@ export function HeroSection() {
             src="/images/icdmb-logo.png"
             alt="ICDMB 2026 Logo"
             className="w-24 h-24 sm:w-28 sm:h-28 md:w-36 md:h-36 object-contain drop-shadow-2xl"
+          />
+          <img
+            src="/images/anrf-logo.jpeg"
+            alt="Anusandhan National Research Foundation logo"
+            className="h-20 w-28 sm:h-24 sm:w-36 md:h-28 md:w-44 object-contain drop-shadow-2xl"
           />
         </div>
 
