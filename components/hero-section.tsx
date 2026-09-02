@@ -21,11 +21,6 @@ export function HeroSection() {
             alt="ICDMB 2026 Logo"
             className="w-24 h-24 sm:w-28 sm:h-28 md:w-36 md:h-36 object-contain drop-shadow-2xl"
           />
-          <img
-            src="/images/anrf-logo.jpeg"
-            alt="Anusandhan National Research Foundation logo"
-            className="h-20 w-28 sm:h-24 sm:w-36 md:h-28 md:w-44 object-contain drop-shadow-2xl"
-          />
         </div>
 
         <p className="text-base sm:text-lg md:text-xl text-white/90 font-medium tracking-wide mb-4 max-w-4xl mx-auto text-balance">
@@ -46,6 +41,17 @@ export function HeroSection() {
         <div className="mt-8 flex items-center justify-center gap-2 text-white/90">
           <MapPin className="w-5 h-5 text-blue-500" />
           <span className="text-base sm:text-lg">MANIT Bhopal, Madhya Pradesh, India</span>
+        </div>
+
+        <div className="mt-6 flex flex-col items-center gap-3">
+          <span className="text-sm font-semibold uppercase tracking-[0.25em] text-white/75">Sponsored by</span>
+          <div className="rounded-lg bg-white px-5 py-3">
+            <img
+              src="/images/anrf-logo.jpeg"
+              alt="Anusandhan National Research Foundation logo"
+              className="h-16 w-40 object-contain sm:h-20 sm:w-52"
+            />
+          </div>
         </div>
       </div>
 
