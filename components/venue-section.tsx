@@ -106,6 +106,22 @@ export function VenueSection() {
               </span>
             </a>
 
+            {/* ANRF */}
+            <div className="group flex flex-col items-center justify-center gap-4 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-800/60 p-10 transition-all hover:border-primary/50 hover:shadow-lg">
+              <div className="flex h-20 items-center justify-center rounded-lg bg-white px-6 py-4">
+                <Image
+                  src="/images/anrf-logo.jpeg"
+                  alt="Anusandhan National Research Foundation logo"
+                  width={220}
+                  height={80}
+                  className="h-12 w-auto object-contain"
+                />
+              </div>
+              <span className="text-xs font-medium uppercase tracking-widest text-gray-500 dark:text-gray-400 text-center">
+                Anusandhan National Research Foundation
+              </span>
+            </div>
+
             {/* Shiva Enterprises */}
             <div className="group flex flex-col items-center justify-center gap-4 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-800/60 p-10 transition-all hover:border-primary/50 hover:shadow-lg">
               <div className="flex h-20 items-center justify-center rounded-lg bg-white px-6 py-4">
