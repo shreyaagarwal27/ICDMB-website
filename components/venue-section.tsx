@@ -84,7 +84,40 @@ export function VenueSection() {
             <p className="mt-4 text-gray-600 dark:text-gray-400">Proud partners supporting ICDMB 2026</p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div className="mb-6 rounded-2xl border-2 border-primary/40 bg-white p-8 shadow-lg shadow-primary/10 dark:bg-gray-900">
+            <div className="flex flex-col items-center justify-center gap-4">
+              <div className="flex h-24 items-center justify-center rounded-lg bg-white px-8 py-4">
+                <Image src="/images/anrf-logo.jpeg" alt="Anusandhan National Research Foundation logo" width={260} height={96} className="h-16 w-auto object-contain" />
+              </div>
+              <span className="text-xs font-bold uppercase tracking-widest text-primary text-center">Featured Sponsor</span>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {/* SBI */}
+            <div className="group flex flex-col items-center justify-center gap-4 rounded-xl border border-gray-200 bg-white p-10 transition-all hover:border-primary/50 hover:shadow-lg dark:border-gray-800 dark:bg-gray-800/60">
+              <div className="flex h-20 items-center justify-center rounded-lg bg-white px-8 py-4">
+                <span className="text-4xl font-bold tracking-tight text-[#1f4f8f]">SBI</span>
+              </div>
+              <span className="text-center text-xs font-medium uppercase tracking-widest text-gray-500 dark:text-gray-400">State Bank of India</span>
+            </div>
+
+            {/* Credila */}
+            <div className="group flex flex-col items-center justify-center gap-4 rounded-xl border border-gray-200 bg-white p-10 transition-all hover:border-primary/50 hover:shadow-lg dark:border-gray-800 dark:bg-gray-800/60">
+              <div className="flex h-20 items-center justify-center rounded-lg bg-white px-5 py-4">
+                <Image src="/images/credila-logo.png" alt="Credila logo" width={220} height={80} className="h-12 w-auto object-contain" />
+              </div>
+              <span className="text-center text-xs font-medium uppercase tracking-widest text-gray-500 dark:text-gray-400">Credila</span>
+            </div>
+
+            {/* Aaghurn */}
+            <div className="group flex flex-col items-center justify-center gap-4 rounded-xl border border-gray-200 bg-white p-10 transition-all hover:border-primary/50 hover:shadow-lg dark:border-gray-800 dark:bg-gray-800/60">
+              <div className="flex h-20 items-center justify-center rounded-lg bg-white px-5 py-4">
+                <Image src="/images/aaghurn-logo.png" alt="Aaghurn logo" width={220} height={80} className="h-12 w-auto object-contain" />
+              </div>
+              <span className="text-center text-xs font-medium uppercase tracking-widest text-gray-500 dark:text-gray-400">Aaghurn</span>
+            </div>
+
             {/* nbil */}
             <a
               href="https://nextbiginnovationlabs.com/"
@@ -105,22 +138,6 @@ export function VenueSection() {
                 Next Big Innovation Labs
               </span>
             </a>
-
-            {/* ANRF */}
-            <div className="group flex flex-col items-center justify-center gap-4 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-800/60 p-10 transition-all hover:border-primary/50 hover:shadow-lg">
-              <div className="flex h-20 items-center justify-center rounded-lg bg-white px-6 py-4">
-                <Image
-                  src="/images/anrf-logo.jpeg"
-                  alt="Anusandhan National Research Foundation logo"
-                  width={220}
-                  height={80}
-                  className="h-12 w-auto object-contain"
-                />
-              </div>
-              <span className="text-xs font-medium uppercase tracking-widest text-gray-500 dark:text-gray-400 text-center">
-                Anusandhan National Research Foundation
-              </span>
-            </div>
 
             {/* Shiva Enterprises */}
             <div className="group flex flex-col items-center justify-center gap-4 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-800/60 p-10 transition-all hover:border-primary/50 hover:shadow-lg">
