@@ -95,9 +95,9 @@ export function ActionBar() {
           <div className="flex items-center justify-center gap-2 text-center">
             <FileText className="w-5 h-5 text-blue-500 flex-shrink-0" />
             <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400">
-              <span className="text-gray-900 dark:text-white font-semibold">Last Date for Full Paper Submission</span>
+              <span className="text-gray-900 dark:text-white font-semibold">Last date for Registration</span>
               <span className="mx-2">:</span>
-              <span className="text-blue-600 dark:text-blue-400 font-semibold">10th September 2026</span>
+              <span className="text-blue-600 dark:text-blue-400 font-semibold">30th September 2026</span>
             </p>
           </div>
         </div>
