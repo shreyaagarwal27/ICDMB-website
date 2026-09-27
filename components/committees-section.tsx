@@ -35,7 +35,7 @@ const prominentSpeakers = [
   },
   {
     name: "Prof. Rajiv Tiwari",
-    designation: "Professor, Mechanical Engineering",
+    designation: "Professor, Department of Mechanical Engineering",
     institution: "IIT Guwahati",
     image: "/images/rajiv-tiwari.png",
   },
