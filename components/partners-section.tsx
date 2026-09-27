@@ -1,37 +1,34 @@
-import { BookOpen, Award } from "lucide-react"
+import { BookOpen } from "lucide-react"
 
 export function PartnersSection() {
   return (
-    <section className="py-24 bg-gradient-to-b from-gray-100 dark:from-gray-800 to-gray-50 dark:to-gray-700">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 text-primary mb-4">
-            <BookOpen className="w-5 h-5" />
-            <span className="text-sm font-semibold uppercase tracking-widest">Publishing Partners</span>
+    <section className="bg-gradient-to-b from-gray-100 to-gray-50 py-24 dark:from-gray-800 dark:to-gray-700">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div className="mb-16 text-center">
+          <div className="mb-4 inline-flex items-center gap-2 text-primary">
+            <BookOpen className="h-5 w-5" />
+            <span className="text-sm font-semibold uppercase tracking-widest">Publication Partners</span>
           </div>
-          <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4">
-            Proceedings to be Published by
+          <h2 className="mb-4 font-serif text-3xl font-bold text-gray-900 dark:text-white sm:text-4xl lg:text-5xl">
+            Publication Partners
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full" />
+          <div className="mx-auto h-1 w-24 rounded-full bg-gradient-to-r from-primary to-secondary" />
         </div>
 
-        {/* Publisher Logos */}
-        <div className="mt-12 flex justify-center">
-          <div className="p-8 bg-white dark:bg-gray-800/80 backdrop-blur-sm rounded-xl border border-gray-200 dark:border-gray-700 shadow-lg">
-            <img 
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-4tPBBYp5cCoDmmK10r43rX8CI02JV8.png" 
-              alt="Atlantis Press and Springer Nature publisher logos" 
-              className="h-32 w-auto object-contain"
+        <div className="grid items-stretch gap-8 md:grid-cols-2">
+          <div className="flex min-h-[420px] items-center justify-center rounded-xl border border-gray-200 bg-white p-6 shadow-lg dark:border-gray-700 dark:bg-gray-800/80 sm:p-8">
+            <img
+              src="/images/atlantis-press-cover.png"
+              alt="Atlantis Press publication cover"
+              className="max-h-[520px] w-auto max-w-full object-contain"
             />
           </div>
-        </div>
-
-        <div className="mt-14 flex flex-col items-center justify-center gap-3">
-          <div className="flex items-center justify-center gap-3 px-6 py-4 bg-white dark:bg-gray-800/80 backdrop-blur-sm rounded-xl border border-primary/20">
-            <Award className="w-6 h-6 text-primary" />
-            <span className="text-lg sm:text-xl font-medium text-gray-900 dark:text-white">
-              Submitted paper will be published in <span className="text-primary font-semibold">Scopus-index Journal</span>
-            </span>
+          <div className="flex min-h-[420px] items-center justify-center rounded-xl border border-gray-200 bg-white p-6 shadow-lg dark:border-gray-700 dark:bg-gray-800/80 sm:p-8">
+            <img
+              src="/images/icdmb-proceedings-cover.png"
+              alt="Proceedings of ICDMB 2026 publication cover"
+              className="max-h-[520px] w-auto max-w-full object-contain"
+            />
           </div>
         </div>
       </div>
