@@ -28,6 +28,25 @@ const leadershipTeam = [
 // Prominent Speakers
 const prominentSpeakers = [
   {
+    name: "Retd. Prof. V. K. Jain",
+    designation: "Retired Professor, Mechanical Engineering Department",
+    institution: "IIT Kanpur",
+    image: "/images/vk-jain.png",
+  },
+  {
+    name: "Prof. Rajiv Tiwari",
+    designation: "Professor, Mechanical Engineering",
+    institution: "IIT Guwahati",
+    image: "/images/rajiv-tiwari.png",
+  },
+  {
+    name: "Prof. Dillip Kumar Pratihar",
+    designation: "Professor, Department of Mechanical Engineering",
+    institution: "IIT Kharagpur, West Bengal, India",
+    image: "/images/dilip-kumar-pratihar.jpg",
+    objectPosition: "center 25%",
+  },
+  {
     name: "Dr. Tarun Gupta",
     designation: "Professor, Department of Industrial and Entrepreneurial Engineering and Engineering Management",
     institution: "Western Michigan University",
@@ -35,63 +54,23 @@ const prominentSpeakers = [
     objectPosition: "center 20%",
   },
   {
-    name: "Dr. Prateek Behera",
-    designation: "Doctor",
-    institution: "Department of Orthopaedics, All India Institute of Medical Sciences, Bhopal, India",
-    image: "/images/prateek-behera.jpg",
-  },
-  {
-    name: "Dr. Chetan Nikhare",
+    name: "Dr. Chetan Nikharia",
     designation: "Professor, Department of Mechanical Engineering",
     institution: "Penn State Erie, The Behrend College, USA",
     image: "/images/chetan-nikhare.jpg",
     objectPosition: "center 30%",
   },
   {
-    name: "Prof. Chandra Sekher Yerramalli",
+    name: "Prof. Chandra Sekher Yarramalli",
     designation: "Professor, Department of Aerospace Engineering",
     institution: "IIT Bombay, Maharashtra, India",
     image: "/images/chandra-sekher-yerramalli.jpg",
   },
   {
-    name: "Dr. Ashish B. Deoghare",
+    name: "Dr. Asish B. Deoghare",
     designation: "Associate Professor, Department of Mechanical Engineering",
     institution: "NIT Silchar, Assam, India",
     image: "/images/ashish-b-deoghare.jpg",
-  },
-  {
-    name: "Dr. Dilip Kumar Pratihar",
-    designation: "Professor, Department of Mechanical Engineering",
-    institution: "IIT Kharagpur, West Bengal, India",
-    image: "/images/dilip-kumar-pratihar.jpg",
-    objectPosition: "center 25%",
-  },
-  {
-    name: "Dr. Siddhartha Pathak",
-    designation: "Application Engineer",
-    institution: "MIDAS R&D Center, Mumbai, Maharashtra",
-    image: "/images/avinash-tiwari.png",
-    objectPosition: "center 25%",
-  },
-  {
-    name: "Dr. Avinash Tiwari",
-    designation: "Scientist C",
-    institution: "Functional Materials and Composites Division (FMCD), CSIR-AMPRI, Bhopal, M.P.",
-    image: "/images/siddhartha-pathak.png",
-    objectPosition: "center 35%",
-  },
-  {
-    name: "Dr. Ekta Srivastava",
-    designation: "Assistant Professor, Department of Biotechnology",
-    institution: "Motilal Nehru National Institute of Technology Allahabad, Prayagraj",
-    image: "/images/ekta-srivastava.png",
-    objectPosition: "center 15%",
-  },
-  {
-    name: "V. K. Jain",
-    designation: "Retired Professor, Mechanical Engineering Department",
-    institution: "IIT Kanpur",
-    image: "/images/vk-jain.png",
   },
   {
     name: "Dr. Neha Arya",
@@ -106,16 +85,30 @@ const prominentSpeakers = [
     image: "/images/amit-nain.jpeg",
   },
   {
+    name: "Dr. Prateek Behera",
+    designation: "Doctor",
+    institution: "Department of Orthopaedics, All India Institute of Medical Sciences, Bhopal, India",
+    image: "/images/prateek-behera.jpg",
+  },
+  {
+    name: "Dr. Abhinash Tiwari",
+    designation: "Scientist C",
+    institution: "Functional Materials and Composites Division (FMCD), CSIR-AMPRI, Bhopal, M.P.",
+    image: "/images/siddhartha-pathak.png",
+    objectPosition: "center 35%",
+  },
+  {
+    name: "Dr. Ekta Srivastava",
+    designation: "Assistant Professor, Department of Biotechnology",
+    institution: "Motilal Nehru National Institute of Technology Allahabad, Prayagraj",
+    image: "/images/ekta-srivastava.png",
+    objectPosition: "center 15%",
+  },
+  {
     name: "Dr. Chinmaya Mahapatra",
     designation: "Assistant Professor, Department of Biotechnology",
     institution: "National Institute of Technology (NIT) Raipur",
     image: "/images/chinmaya-mahapatra.jpeg",
-  },
-  {
-    name: "Prof. Rajiv Tiwari",
-    designation: "Professor, Mechanical Engineering",
-    institution: "IIT Guwahati",
-    image: "/images/rajiv-tiwari.png",
   },
 ]
 
