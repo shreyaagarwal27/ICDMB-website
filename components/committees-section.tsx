@@ -88,6 +88,12 @@ const prominentSpeakers = [
     objectPosition: "center 15%",
   },
   {
+    name: "V. K. Jain",
+    designation: "Retired Professor, Mechanical Engineering Department",
+    institution: "IIT Kanpur",
+    image: "/images/vk-jain.png",
+  },
+  {
     name: "Dr. Neha Arya",
     designation: "Associate Professor, Department of Translational Medicine",
     institution: "AIIMS Bhopal",
@@ -106,16 +112,10 @@ const prominentSpeakers = [
     image: "/images/chinmaya-mahapatra.jpeg",
   },
   {
-    name: "Rajiv Tiwari",
-    designation: "Professor",
+    name: "Prof. Rajiv Tiwari",
+    designation: "Professor, Mechanical Engineering",
     institution: "IIT Guwahati",
     image: "/images/rajiv-tiwari.png",
-  },
-  {
-    name: "V. K. Jain",
-    designation: "Retd. Professor, Mechanical Engineering Department",
-    institution: "IIT Kanpur",
-    image: "/images/vk-jain.png",
   },
 ]
 
