@@ -29,6 +29,12 @@ const registrationData = [
     badge: null,
   },
   {
+    category: "Co-authorship participation",
+    earlyBird: "₹2,000",
+    regular: "₹2,000",
+    badge: null,
+  },
+  {
     category: "Academicians / Industrialist (Abroad)",
     earlyBird: "$150",
     regular: "$200",
