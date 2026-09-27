@@ -310,8 +310,8 @@ export function CommitteesSection() {
           </div>
         </div>
 
-        {/* Section 1b: Prominent Speakers */}
-        <div className="mb-16">
+  {/* Section 1b: Prominent Speakers */}
+  <div id="prominent-speakers" className="mb-16 scroll-mt-24">
           <motion.h3
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
