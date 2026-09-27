@@ -22,6 +22,22 @@ const events = [
     accent: "from-sky-500 to-blue-700",
     rewards: ["Certificates for all participants", "Exciting gifts for best posters"],
   },
+  {
+    title: "Idea2Impact 180",
+    subtitle: "3-Minute Engineering Innovation Pitch",
+    description: "Present your innovative engineering idea in just three minutes, demonstrate its creativity, feasibility, and real-world impact, and inspire the jury.",
+    icon: Presentation,
+    accent: "from-orange-500 to-amber-500",
+    rewards: ["1st Prize: ₹5,000", "2nd Prize: ₹3,000", "3rd Prize: ₹2,000"],
+  },
+  {
+    title: "DesignX 2026",
+    subtitle: "Engineering Design & Problem-Solving Challenge",
+    description: "Solve a real-world engineering problem and present your concept through design thinking, analysis, creativity, and innovation.",
+    icon: Palette,
+    accent: "from-rose-500 to-red-700",
+    rewards: ["Certificates for all participants", "Exciting gifts for best designs"],
+  },
 ]
 
 export function ChallengeSection() {
@@ -38,7 +54,7 @@ export function ChallengeSection() {
         >
           <p className="mb-3 text-sm font-bold uppercase tracking-[0.28em] text-sky-300">Showcase your research | Share your ideas | Inspire change</p>
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl">ICDMB Challenge and Competition</h2>
-          <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-slate-300 sm:text-lg">Competitions designed for research scholars to communicate bold ideas, demonstrate impact, and make research accessible.</p>
+          <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-slate-300 sm:text-lg">Competitions designed for research scholars and undergraduate students to communicate bold ideas, demonstrate impact, and make research accessible.</p>
         </motion.div>
 
         <div className="grid gap-6 lg:grid-cols-2">
@@ -81,7 +97,7 @@ export function ChallengeSection() {
 
         <div className="mt-8 grid gap-4 rounded-2xl border border-sky-300/20 bg-sky-400/10 p-6 sm:grid-cols-3 sm:p-8">
           <div className="flex items-center gap-3"><CalendarDays className="h-5 w-5 text-sky-300" aria-hidden="true" /><span><strong>Event:</strong> 08–09 October 2026</span></div>
-          <div className="flex items-center gap-3"><Users className="h-5 w-5 text-sky-300" aria-hidden="true" /><span><strong>Eligibility:</strong> Ph.D., M.Tech. & research scholars</span></div>
+          <div className="flex items-center gap-3"><Users className="h-5 w-5 text-sky-300" aria-hidden="true" /><span><strong>Eligibility:</strong> Ph.D., M.Tech., research scholars & B.Tech. students</span></div>
           <div className="flex items-center gap-3"><Clock3 className="h-5 w-5 text-sky-300" aria-hidden="true" /><span><strong>Register by:</strong> 30 September 2026</span></div>
         </div>
 
