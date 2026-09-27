@@ -94,7 +94,7 @@ const prominentSpeakers = [
     name: "Dr. Abhinash Tiwari",
     designation: "Scientist C",
     institution: "Functional Materials and Composites Division (FMCD), CSIR-AMPRI, Bhopal, M.P.",
-    image: "/images/siddhartha-pathak.png",
+    image: "/images/avinash-tiwari.png",
     objectPosition: "center 35%",
   },
   {
