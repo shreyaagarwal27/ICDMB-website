@@ -16,18 +16,18 @@ export function PartnersSection() {
         </div>
 
         <div className="grid items-stretch gap-8 md:grid-cols-2">
-          <div className="flex min-h-[420px] items-center justify-center rounded-xl border border-gray-200 bg-white p-6 shadow-lg dark:border-gray-700 dark:bg-gray-800/80 sm:p-8">
+          <div className="flex min-h-[320px] items-center justify-center rounded-xl border border-gray-200 bg-white p-5 shadow-lg dark:border-gray-700 dark:bg-gray-800/80 sm:p-6">
             <img
               src="/images/atlantis-press-cover.png"
               alt="Atlantis Press publication cover"
-              className="max-h-[520px] w-auto max-w-full object-contain"
+              className="max-h-[360px] w-auto max-w-full object-contain"
             />
           </div>
-          <div className="flex min-h-[420px] items-center justify-center rounded-xl border border-gray-200 bg-white p-6 shadow-lg dark:border-gray-700 dark:bg-gray-800/80 sm:p-8">
+          <div className="flex min-h-[320px] items-center justify-center rounded-xl border border-gray-200 bg-white p-5 shadow-lg dark:border-gray-700 dark:bg-gray-800/80 sm:p-6">
             <img
               src="/images/icdmb-proceedings-cover.png"
               alt="Proceedings of ICDMB 2026 publication cover"
-              className="max-h-[520px] w-auto max-w-full object-contain"
+              className="max-h-[360px] w-auto max-w-full object-contain"
             />
           </div>
         </div>
