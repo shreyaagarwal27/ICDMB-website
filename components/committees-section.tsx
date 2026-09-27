@@ -91,7 +91,7 @@ const prominentSpeakers = [
     image: "/images/prateek-behera.jpg",
   },
   {
-    name: "Dr. Abhinash Tiwari",
+    name: "Dr. Avinash Tiwari",
     designation: "Scientist C",
     institution: "Functional Materials and Composites Division (FMCD), CSIR-AMPRI, Bhopal, M.P.",
     image: "/images/avinash-tiwari.png",
@@ -114,7 +114,7 @@ const prominentSpeakers = [
     name: "Dr. Siddharth Pathak",
     designation: "Application Engineer",
     institution: "MIDAS R&D Center, Mumbai, Maharashtra",
-    image: "/images/siddhartha-pathak.png",
+    image: "/images/avinash-tiwari.png",
     objectPosition: "center 25%",
   },
 ]
