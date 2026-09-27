@@ -1,6 +1,7 @@
 import { HeroSection } from "@/components/hero-section"
 import { ActionBar } from "@/components/action-bar"
 import { PartnersSection } from "@/components/partners-section"
+import { ChallengeSection } from "@/components/challenge-section"
 import { AboutSection } from "@/components/about-section"
 import { AboutICDMB } from "@/components/about-icdmb"
 import { AboutInstitute } from "@/components/about-institute"
@@ -22,6 +23,7 @@ export default function HomePage() {
       <Header />
       <HeroSection />
       <ActionBar />
+      <ChallengeSection />
       <PartnersSection />
       <AboutICDMB />
       <AboutInstitute />
