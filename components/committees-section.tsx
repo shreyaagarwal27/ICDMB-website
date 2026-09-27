@@ -114,7 +114,7 @@ const prominentSpeakers = [
     name: "Dr. Siddharth Pathak",
     designation: "Application Engineer",
     institution: "MIDAS R&D Center, Mumbai, Maharashtra",
-    image: "/images/avinash-tiwari.png",
+    image: "/images/siddhartha-pathak.png",
     objectPosition: "center 25%",
   },
 ]
