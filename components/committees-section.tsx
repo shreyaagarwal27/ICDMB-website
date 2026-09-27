@@ -110,6 +110,13 @@ const prominentSpeakers = [
     institution: "National Institute of Technology (NIT) Raipur",
     image: "/images/chinmaya-mahapatra.jpeg",
   },
+  {
+    name: "Dr. Siddharth Pathak",
+    designation: "Application Engineer",
+    institution: "MIDAS R&D Center, Mumbai, Maharashtra",
+    image: "/images/siddhartha-pathak.png",
+    objectPosition: "center 25%",
+  },
 ]
 
 // Organizing Secretaries
