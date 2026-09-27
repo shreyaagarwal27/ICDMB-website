@@ -123,9 +123,7 @@ export function ActionBar() {
           <p className="mt-2 text-sm font-semibold text-orange-800 dark:text-orange-200 sm:text-base">
             Don&apos;t miss this final opportunity to present your research at ICDMB 2026!
           </p>
-          <p className="mt-3 text-base font-bold text-amber-950 dark:text-amber-100 sm:text-lg">
-            Last date for Registration: 30th September 2026
-          </p>
+
         </div>
       </div>
     </section>
