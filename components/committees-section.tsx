@@ -87,6 +87,36 @@ const prominentSpeakers = [
     image: "/images/ekta-srivastava.png",
     objectPosition: "center 15%",
   },
+  {
+    name: "Dr. Neha Arya",
+    designation: "Associate Professor, Department of Translational Medicine",
+    institution: "AIIMS Bhopal",
+    image: "/images/neha-arya.jpeg",
+  },
+  {
+    name: "Dr. Amit Nain",
+    designation: "Assistant Professor",
+    institution: "Kusuma School of Biological Sciences, IIT Delhi",
+    image: "/images/amit-nain.jpeg",
+  },
+  {
+    name: "Dr. Chinmaya Mahapatra",
+    designation: "Assistant Professor, Department of Biotechnology",
+    institution: "National Institute of Technology (NIT) Raipur",
+    image: "/images/chinmaya-mahapatra.jpeg",
+  },
+  {
+    name: "Rajiv Tiwari",
+    designation: "Professor",
+    institution: "IIT Guwahati",
+    image: "/images/rajiv-tiwari.png",
+  },
+  {
+    name: "V. K. Jain",
+    designation: "Retd. Professor, Mechanical Engineering Department",
+    institution: "IIT Kanpur",
+    image: "/images/vk-jain.png",
+  },
 ]
 
 // Organizing Secretaries
