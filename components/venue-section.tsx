@@ -84,18 +84,18 @@ export function VenueSection() {
             <p className="mt-4 text-gray-600 dark:text-gray-400">Proud partners supporting ICDMB 2026</p>
           </div>
 
-          <div className="mb-6 rounded-2xl border-2 border-primary/40 bg-white p-8 shadow-lg shadow-primary/10 dark:bg-gray-900">
+          <div className="mx-auto mb-8 w-fit max-w-full rounded-2xl border-2 border-primary/50 bg-white p-6 shadow-lg shadow-primary/10 dark:bg-gray-900 sm:p-8">
             <div className="flex flex-col items-center justify-center gap-4">
-              <div className="flex h-24 items-center justify-center rounded-lg bg-white px-8 py-4">
-                <Image src="/images/anrf-logo.jpeg" alt="Anusandhan National Research Foundation logo" width={260} height={96} className="h-16 w-auto object-contain" />
+              <div className="flex h-32 items-center justify-center rounded-lg border border-primary/20 bg-white px-8 py-5 sm:h-40 sm:px-10">
+                <Image src="/images/anrf-logo.jpeg" alt="Anusandhan National Research Foundation logo" width={360} height={132} className="h-24 w-auto object-contain sm:h-32" />
               </div>
-              <span className="text-xs font-bold uppercase tracking-widest text-primary text-center">Featured Sponsor</span>
+              <span className="text-center text-xs font-bold uppercase tracking-widest text-primary">Featured Sponsor</span>
             </div>
           </div>
 
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mx-auto flex w-full max-w-5xl flex-wrap justify-center gap-5">
             {/* SBI */}
-            <div className="group flex flex-col items-center justify-center gap-4 rounded-xl border border-gray-200 bg-white p-10 transition-all hover:border-primary/50 hover:shadow-lg dark:border-gray-800 dark:bg-gray-800/60">
+            <div className="group flex min-h-48 w-full flex-col items-center justify-center gap-4 rounded-xl border border-gray-200 bg-white p-6 transition-all hover:border-primary/50 hover:shadow-lg dark:border-gray-800 dark:bg-gray-800/60 sm:w-[calc(50%-0.625rem)] lg:w-[calc(33.333%-0.875rem)]">
               <div className="flex h-20 items-center justify-center rounded-lg bg-white px-8 py-4">
                 <span className="text-4xl font-bold tracking-tight text-[#1f4f8f]">SBI</span>
               </div>
@@ -103,7 +103,7 @@ export function VenueSection() {
             </div>
 
             {/* Credila */}
-            <div className="group flex flex-col items-center justify-center gap-4 rounded-xl border border-gray-200 bg-white p-10 transition-all hover:border-primary/50 hover:shadow-lg dark:border-gray-800 dark:bg-gray-800/60">
+            <div className="group flex min-h-48 w-full flex-col items-center justify-center gap-4 rounded-xl border border-gray-200 bg-white p-6 transition-all hover:border-primary/50 hover:shadow-lg dark:border-gray-800 dark:bg-gray-800/60 sm:w-[calc(50%-0.625rem)] lg:w-[calc(33.333%-0.875rem)]">
               <div className="flex h-20 items-center justify-center rounded-lg bg-white px-5 py-4">
                 <Image src="/images/credila-logo.png" alt="Credila logo" width={220} height={80} className="h-12 w-auto object-contain" />
               </div>
@@ -111,7 +111,7 @@ export function VenueSection() {
             </div>
 
             {/* Aaghurn */}
-            <div className="group flex flex-col items-center justify-center gap-4 rounded-xl border border-gray-200 bg-white p-10 transition-all hover:border-primary/50 hover:shadow-lg dark:border-gray-800 dark:bg-gray-800/60">
+            <div className="group flex min-h-48 w-full flex-col items-center justify-center gap-4 rounded-xl border border-gray-200 bg-white p-6 transition-all hover:border-primary/50 hover:shadow-lg dark:border-gray-800 dark:bg-gray-800/60 sm:w-[calc(50%-0.625rem)] lg:w-[calc(33.333%-0.875rem)]">
               <div className="flex h-20 items-center justify-center rounded-lg bg-white px-5 py-4">
                 <Image src="/images/aaghurn-logo.png" alt="Aaghurn logo" width={220} height={80} className="h-12 w-auto object-contain" />
               </div>
@@ -123,7 +123,7 @@ export function VenueSection() {
               href="https://nextbiginnovationlabs.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex flex-col items-center justify-center gap-4 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-800/60 p-10 transition-all hover:border-primary/50 hover:shadow-lg"
+className="group flex min-h-48 w-full flex-col items-center justify-center gap-4 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-800/60 p-6 transition-all hover:border-primary/50 hover:shadow-lg sm:w-[calc(50%-0.625rem)] lg:w-[calc(33.333%-0.875rem)]"
             >
               <div className="flex h-20 items-center justify-center rounded-lg bg-white px-6 py-4">
                 <Image
@@ -140,7 +140,7 @@ export function VenueSection() {
             </a>
 
             {/* Shiva Enterprises */}
-            <div className="group flex flex-col items-center justify-center gap-4 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-800/60 p-10 transition-all hover:border-primary/50 hover:shadow-lg">
+            <div className="group flex min-h-48 w-full flex-col items-center justify-center gap-4 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-800/60 p-6 transition-all hover:border-primary/50 hover:shadow-lg sm:w-[calc(50%-0.625rem)] lg:w-[calc(33.333%-0.875rem)]">
               <div className="flex h-20 items-center justify-center rounded-lg bg-white px-6 py-4">
                 <span className="font-serif text-4xl font-bold italic tracking-tight bg-gradient-to-r from-orange-500 via-rose-500 to-red-600 bg-clip-text text-transparent">
                   Shiva
