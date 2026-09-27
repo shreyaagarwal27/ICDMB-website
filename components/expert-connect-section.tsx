@@ -18,7 +18,7 @@ const sessions = [
     subtitle: "My Research Is Stuck — What Next?",
     description: "Discuss your research challenges and get practical suggestions, new directions, and expert guidance.",
     icon: Lightbulb,
-    accent: "from-violet-500 to-fuchsia-600",
+    accent: "from-indigo-500 to-violet-700",
   },
 ]
 

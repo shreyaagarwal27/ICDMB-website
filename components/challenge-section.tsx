@@ -27,7 +27,7 @@ const events = [
     subtitle: "3-Minute Engineering Innovation Pitch",
     description: "Present your innovative engineering idea in just three minutes, demonstrate its creativity, feasibility, and real-world impact, and inspire the jury.",
     icon: Presentation,
-    accent: "from-orange-500 to-amber-500",
+    accent: "from-cyan-500 to-blue-600",
     rewards: ["1st Prize: ₹5,000", "2nd Prize: ₹3,000", "3rd Prize: ₹2,000"],
   },
   {
@@ -35,7 +35,7 @@ const events = [
     subtitle: "Engineering Design & Problem-Solving Challenge",
     description: "Solve a real-world engineering problem and present your concept through design thinking, analysis, creativity, and innovation.",
     icon: Palette,
-    accent: "from-rose-500 to-red-700",
+    accent: "from-indigo-500 to-violet-700",
     rewards: ["Certificates for all participants", "Exciting gifts for best designs"],
   },
 ]
@@ -84,7 +84,7 @@ export function ChallengeSection() {
                   <div className="space-y-3">
                     {event.rewards.map((reward) => (
                       <div key={reward} className="flex items-center gap-3 text-sm font-medium text-slate-100 sm:text-base">
-                        {index === 0 ? <Award className="h-5 w-5 text-amber-300" aria-hidden="true" /> : <Gift className="h-5 w-5 text-emerald-300" aria-hidden="true" />}
+                        {index === 0 ? <Award className="h-5 w-5 text-sky-300" aria-hidden="true" /> : <Gift className="h-5 w-5 text-cyan-300" aria-hidden="true" />}
                         <span>{reward}</span>
                       </div>
                     ))}
@@ -102,7 +102,7 @@ export function ChallengeSection() {
         </div>
 
         <div className="mt-8 text-center">
-          <a href={registrationUrl} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full bg-amber-400 px-7 py-3 font-bold text-slate-950 shadow-lg shadow-amber-400/20 transition hover:bg-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-300 focus:ring-offset-2 focus:ring-offset-slate-950">
+          <a href={registrationUrl} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full bg-cyan-400 px-7 py-3 font-bold text-slate-950 shadow-lg shadow-cyan-400/20 transition hover:bg-cyan-300 focus:outline-none focus:ring-2 focus:ring-cyan-300 focus:ring-offset-2 focus:ring-offset-slate-950">
             Register for the competitions
             <ExternalLink className="h-4 w-4" aria-hidden="true" />
           </a>
