@@ -24,8 +24,8 @@ const sessions = [
 
 export function ExpertConnectSection() {
   return (
-    <section id="expert-connect" className="relative overflow-hidden bg-slate-900 py-20 text-white sm:py-24">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(6,182,212,0.16),transparent_38%),radial-gradient(circle_at_bottom_right,rgba(168,85,247,0.18),transparent_42%)]" />
+    <section id="expert-connect" className="relative overflow-hidden bg-background py-20 text-foreground sm:py-24">
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(77,141,246,0.1),transparent_38%),radial-gradient(circle_at_bottom_right,rgba(0,86,179,0.08),transparent_42%)] dark:bg-[radial-gradient(circle_at_top_left,rgba(6,182,212,0.16),transparent_38%),radial-gradient(circle_at_bottom_right,rgba(168,85,247,0.18),transparent_42%)]" />
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -34,12 +34,12 @@ export function ExpertConnectSection() {
           transition={{ duration: 0.6 }}
           className="mx-auto mb-12 max-w-3xl text-center"
         >
-          <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-cyan-300/20 bg-cyan-300/10 px-4 py-2 text-sm font-semibold uppercase tracking-[0.2em] text-cyan-200">
+          <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-2 text-sm font-semibold uppercase tracking-[0.2em] text-primary dark:bg-primary/10">
             <Sparkles className="h-4 w-4" aria-hidden="true" />
             Expert Connect
           </div>
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl">ICDMB Events – Expert Connect</h2>
-          <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-slate-300 sm:text-lg">
+          <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-muted-foreground sm:text-lg">
             Two special interactive sessions for learning, guidance, and networking.
           </p>
         </motion.div>
@@ -54,7 +54,7 @@ export function ExpertConnectSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="overflow-hidden rounded-3xl border border-white/10 bg-white/[0.07] shadow-2xl backdrop-blur-sm"
+                className="overflow-hidden rounded-3xl border border-border bg-card shadow-lg"
               >
                 <div className={`bg-gradient-to-r ${session.accent} p-6 sm:p-8`}>
                   <div className="flex items-start justify-between gap-4">
@@ -67,8 +67,8 @@ export function ExpertConnectSection() {
                   <p className="mt-5 text-lg font-semibold text-white/95">{session.subtitle}</p>
                 </div>
                 <div className="p-6 sm:p-8">
-                  <p className="text-base leading-8 text-slate-300 sm:text-lg">{session.description}</p>
-                  <div className="mt-7 flex items-center gap-3 text-sm font-semibold text-cyan-200 sm:text-base">
+                  <p className="text-base leading-8 text-muted-foreground sm:text-lg">{session.description}</p>
+                  <div className="mt-7 flex items-center gap-3 text-sm font-semibold text-primary sm:text-base">
                     <Network className="h-5 w-5 shrink-0" aria-hidden="true" />
                     Interact with experts · Explore opportunities · Get guidance · Build connections
                     <ArrowRight className="ml-auto h-5 w-5 shrink-0" aria-hidden="true" />
