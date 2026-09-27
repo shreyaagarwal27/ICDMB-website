@@ -4,13 +4,12 @@ import Link from "next/link"
 const quickLinks = [
   { label: "Home", href: "#home" },
   { label: "About ICDMB", href: "#about-icdmb" },
-  { label: "About MANIT", href: "#about-manit" },
-  { label: "About Department", href: "#about-department" },
-  { label: "Organizing Committee", href: "#organizing-committee" },
+  { label: "Speakers", href: "#organizing-committee" },
   { label: "Conference Themes", href: "#conference-themes" },
   { label: "Important Dates", href: "#important-dates" },
   { label: "Registration", href: "#registration" },
-  { label: "Travel and Accomodation", href: "#travel-and-accomodation" },
+  { label: "Travel and Accommodation", href: "#venue" },
+  { label: "Contact Us", href: "#contact-us" },
 ]
 
 export function Footer() {
