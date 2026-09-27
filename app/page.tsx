@@ -24,10 +24,10 @@ export default function HomePage() {
       <Header />
       <HeroSection />
       <ActionBar />
+      <AboutICDMB />
       <ChallengeSection />
       <ExpertConnectSection />
       <PartnersSection />
-      <AboutICDMB />
       <AboutInstitute />
       <AboutSection />
       <SubmissionSection />
