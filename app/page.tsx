@@ -3,7 +3,6 @@ import { ActionBar } from "@/components/action-bar"
 import { PartnersSection } from "@/components/partners-section"
 import { ChallengeSection } from "@/components/challenge-section"
 import { ExpertConnectSection } from "@/components/expert-connect-section"
-import { AccommodationSection } from "@/components/accommodation-section"
 import { AboutSection } from "@/components/about-section"
 import { AboutICDMB } from "@/components/about-icdmb"
 import { AboutInstitute } from "@/components/about-institute"
@@ -28,7 +27,6 @@ export default function HomePage() {
       <ChallengeSection />
       <ExpertConnectSection />
       <PartnersSection />
-      <AccommodationSection />
       <AboutICDMB />
       <AboutInstitute />
       <AboutSection />
