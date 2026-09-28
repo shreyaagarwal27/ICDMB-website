@@ -18,7 +18,7 @@ export function LateSubmissionNotice() {
           <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-slate-300 lg:justify-start">
             <span>Deadline: <strong className="font-extrabold text-amber-300">05 October 2026</strong></span>
             <span>Fee: <strong className="font-extrabold text-amber-300">₹9,500/-</strong></span>
-            <span className="text-slate-300">Published only in <strong className="text-slate-100">Advanced Design and Materials Engineering</strong></span>
+            <span className="basis-full text-slate-300">Published only on our Book volume Proceeding of ICDMB 2026 Advanced Design, Materials and Biomedical Engineering with ISBN 978-93-344-9268-2</span>
           </div>
         </div>
         <a
