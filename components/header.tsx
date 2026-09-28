@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { useState } from "react"
+import { useEffect, useRef, useState } from "react"
 import { ChevronDown, Menu, X } from "lucide-react"
 import { ThemeToggle } from "@/components/theme-toggle"
 
@@ -18,6 +18,22 @@ const trailingMenuItems = ["Travel and Accommodation", "Contact Us"]
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const authorsMenuRef = useRef<HTMLDetailsElement>(null)
+
+  useEffect(() => {
+    const closeAuthorsMenu = (event: MouseEvent) => {
+      if (authorsMenuRef.current && !authorsMenuRef.current.contains(event.target as Node)) {
+        authorsMenuRef.current.open = false
+      }
+    }
+
+    document.addEventListener("click", closeAuthorsMenu)
+    return () => document.removeEventListener("click", closeAuthorsMenu)
+  }, [])
+
+  const closeAuthorsMenu = () => {
+    if (authorsMenuRef.current) authorsMenuRef.current.open = false
+  }
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 dark:bg-gray-950/90 backdrop-blur-md border-b border-gray-200 dark:border-gray-800">
@@ -44,7 +60,7 @@ export function Header() {
                 <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-primary transition-all group-hover:w-3/4" />
               </Link>
             ))}
-            <details className="group relative">
+            <details ref={authorsMenuRef} className="group relative">
               <summary className="flex cursor-pointer list-none items-center gap-1 px-2 py-2 text-xs text-gray-600 transition-colors hover:text-primary dark:text-gray-400 dark:hover:text-primary">
                 <span className="relative">
                   Authors
@@ -53,8 +69,8 @@ export function Header() {
                 <ChevronDown className="size-3 transition-transform group-open:rotate-180" aria-hidden="true" />
               </summary>
               <div className="absolute right-0 top-full z-10 mt-2 min-w-56 overflow-hidden rounded-xl border border-gray-200 bg-white p-1.5 shadow-xl ring-1 ring-black/5 dark:border-gray-800 dark:bg-gray-900">
-                <Link href="/accommodation" className="block rounded-lg px-3 py-2.5 text-sm font-medium text-gray-700 transition-colors hover:bg-primary/10 hover:text-primary dark:text-gray-200">Accommodation</Link>
-                <a href="/presentation-guide.pdf" target="_blank" rel="noopener noreferrer" className="block rounded-lg px-3 py-2.5 text-sm font-medium text-gray-700 transition-colors hover:bg-primary/10 hover:text-primary dark:text-gray-200">Presentation Guide</a>
+                <Link href="/accommodation" onClick={closeAuthorsMenu} className="block rounded-lg px-3 py-2.5 text-sm font-medium text-gray-700 transition-colors hover:bg-primary/10 hover:text-primary dark:text-gray-200">Accommodation</Link>
+                <a href="/presentation-guide.pdf" onClick={closeAuthorsMenu} target="_blank" rel="noopener noreferrer" className="block rounded-lg px-3 py-2.5 text-sm font-medium text-gray-700 transition-colors hover:bg-primary/10 hover:text-primary dark:text-gray-200">Presentation Guide</a>
               </div>
             </details>
             {trailingMenuItems.map((item) => (
