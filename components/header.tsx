@@ -45,8 +45,11 @@ export function Header() {
               </Link>
             ))}
             <details className="group relative">
-              <summary className="flex cursor-pointer list-none items-center gap-1 rounded-lg border border-primary/20 bg-primary/5 px-3 py-2 text-xs font-semibold text-primary transition-colors hover:border-primary/40 hover:bg-primary/10 dark:border-primary/30 dark:bg-primary/10">
-                Authors
+              <summary className="flex cursor-pointer list-none items-center gap-1 px-2 py-2 text-xs text-gray-600 transition-colors hover:text-primary dark:text-gray-400 dark:hover:text-primary">
+                <span className="relative">
+                  Authors
+                  <span className="absolute bottom-0 left-1/2 h-0.5 w-0 -translate-x-1/2 bg-primary transition-all group-hover:w-3/4" />
+                </span>
                 <ChevronDown className="size-3 transition-transform group-open:rotate-180" aria-hidden="true" />
               </summary>
               <div className="absolute right-0 top-full z-10 mt-2 min-w-56 overflow-hidden rounded-xl border border-gray-200 bg-white p-1.5 shadow-xl ring-1 ring-black/5 dark:border-gray-800 dark:bg-gray-900">

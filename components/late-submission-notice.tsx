@@ -12,10 +12,10 @@ export function LateSubmissionNotice() {
       <div className="relative mx-auto grid max-w-7xl items-center gap-3 px-4 py-3 text-xs sm:px-6 lg:grid-cols-[auto_minmax(0,1fr)_auto] lg:px-8">
         <span className="mx-auto inline-flex items-center gap-1.5 whitespace-nowrap rounded-full border border-amber-400/50 bg-amber-400/10 px-2.5 py-1 text-[10px] font-bold tracking-[0.14em] text-amber-200 lg:mx-0">
           <span className="size-1.5 animate-pulse rounded-full bg-amber-300" aria-hidden="true" />
-          FINAL OPPORTUNITY
+          LAST DATE
         </span>
         <div className="grid min-w-0 gap-1 text-center lg:text-left">
-          <p className="font-semibold text-slate-100">ICDMB 2026 <span className="text-amber-300">·</span> Late Paper Submission Open</p>
+          <p className="font-semibold text-slate-100">ICDMB 2026 <span className="text-amber-300">·</span> Late paper submissions close soon</p>
           <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-slate-300 lg:justify-start">
             <span>Deadline: <strong className="font-extrabold text-amber-300">05 October 2026</strong></span>
             <span>Fee: <strong className="font-extrabold text-amber-300">₹9,500/-</strong></span>
