@@ -17,6 +17,7 @@ import { VenueSection } from "@/components/venue-section"
 import { MapSection } from "@/components/map-section"
 import { TravelAttractionsSection } from "@/components/travel-attractions-section"
 import { ContactSection } from "@/components/contact-section"
+import { LateSubmissionNotice } from "@/components/late-submission-notice"
 
 export default function HomePage() {
   return (
@@ -42,6 +43,7 @@ export default function HomePage() {
       </div>
       <ContactSection />
       <Footer />
+      <LateSubmissionNotice />
     </main>
   )
 }

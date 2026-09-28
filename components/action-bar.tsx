@@ -112,19 +112,7 @@ export function ActionBar() {
           </p>
         </div>
 
-        {/* Late Paper Submission Opportunity */}
-        <div className="mt-8 rounded-2xl border-2 border-amber-400/70 bg-gradient-to-r from-amber-50 via-orange-50 to-amber-100 px-5 py-5 text-center shadow-lg shadow-amber-500/10 dark:border-amber-400/50 dark:from-amber-950/40 dark:via-orange-950/30 dark:to-amber-900/30 sm:px-8">
-          <h3 className="text-lg font-bold text-amber-900 dark:text-amber-200 sm:text-xl">
-            Late Paper Submission Opportunity
-          </h3>
-          <p className="mx-auto mt-2 max-w-3xl text-sm leading-relaxed text-amber-950/80 dark:text-amber-100/85 sm:text-base">
-            Good news! Late paper submissions are now open until <strong>05 October 2026</strong>, with a registration fee of <strong>₹9,500/-</strong>.
-          </p>
-          <p className="mt-2 text-sm font-semibold text-orange-800 dark:text-orange-200 sm:text-base">
-            Don&apos;t miss this final opportunity to present your research at ICDMB 2026!
-          </p>
 
-        </div>
       </div>
     </section>
   )
