@@ -10,12 +10,12 @@ export function LateSubmissionNotice() {
     >
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_12%_50%,rgba(245,158,11,0.12),transparent_25%),radial-gradient(circle_at_88%_50%,rgba(30,64,175,0.18),transparent_30%)] motion-safe:animate-pulse" />
       <div className="relative mx-auto grid max-w-7xl items-center gap-3 px-4 py-3 text-xs sm:px-6 lg:grid-cols-[auto_minmax(0,1fr)_auto] lg:px-8">
-        <span className="mx-auto inline-flex items-center gap-1.5 whitespace-nowrap rounded-full border border-amber-400/50 bg-amber-400/10 px-2.5 py-1 text-[10px] font-bold tracking-[0.14em] text-amber-200 lg:mx-0">
-          <span className="size-1.5 animate-pulse rounded-full bg-amber-300" aria-hidden="true" />
-          LAST DATE
+        <span className="mx-auto inline-flex items-center gap-1.5 whitespace-nowrap rounded-full border border-blue-300/50 bg-gradient-to-r from-blue-500/20 via-indigo-500/20 to-cyan-400/20 px-2.5 py-1 text-[10px] font-bold tracking-[0.14em] text-blue-100 shadow-sm shadow-blue-500/20 lg:mx-0">
+          <span className="size-1.5 animate-pulse rounded-full bg-gradient-to-r from-blue-300 to-cyan-300" aria-hidden="true" />
+          FINAL OPPORTUNITY
         </span>
         <div className="grid min-w-0 gap-1 text-center lg:text-left">
-          <p className="font-semibold text-slate-100">ICDMB 2026 <span className="text-amber-300">·</span> Late paper submissions close soon</p>
+          <p className="font-semibold text-slate-100">ICDMB 2026 <span className="text-amber-300">·</span> Late paper submission opportunity</p>
           <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-slate-300 lg:justify-start">
             <span>Deadline: <strong className="font-extrabold text-amber-300">05 October 2026</strong></span>
             <span>Fee: <strong className="font-extrabold text-amber-300">₹9,500/-</strong></span>
