@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useRef, useState } from "react"
 import { motion } from "framer-motion"
-import { ArrowLeft, ArrowRight, Award, CalendarDays, Clock3, ExternalLink, Gift, Palette, Presentation, Users } from "lucide-react"
+import { ArrowLeft, ArrowRight, CalendarDays, Clock3, ExternalLink, Users } from "lucide-react"
 
 const registrationUrl = "https://forms.gle/qjYe6it6d7vaYvV1A"
 
@@ -11,7 +11,6 @@ const events = [
     title: "Research2Impact 180",
     subtitle: "Application-Oriented Research in 3 Minutes",
     description: "Present your research in just three minutes, communicate its real-world application, and showcase its innovation, impact, and future potential.",
-    icon: Presentation,
     accent: "from-violet-500 to-indigo-600",
     glow: "rgba(139,92,246,0.34)",
     tag: "RESEARCH PITCH",
@@ -21,7 +20,6 @@ const events = [
     title: "Research Canvas 2026",
     subtitle: "Visual Research & Poster Challenge",
     description: "Turn your research into a creative poster. Highlight key findings and novelty while engaging with peers and experts.",
-    icon: Palette,
     accent: "from-sky-500 to-blue-700",
     glow: "rgba(14,165,233,0.34)",
     tag: "POSTER CHALLENGE",
@@ -31,7 +29,6 @@ const events = [
     title: "Idea2Impact 180",
     subtitle: "3-Minute Engineering Innovation Pitch",
     description: "Present your innovative engineering idea in just three minutes, demonstrate its creativity, feasibility, and real-world impact, and inspire the jury.",
-    icon: Presentation,
     accent: "from-cyan-500 to-blue-600",
     glow: "rgba(6,182,212,0.34)",
     tag: "INNOVATION PITCH",
@@ -41,7 +38,6 @@ const events = [
     title: "DesignX 2026",
     subtitle: "Engineering Design & Problem-Solving Challenge",
     description: "Solve a real-world engineering problem and present your concept through design thinking, analysis, creativity, and innovation.",
-    icon: Palette,
     accent: "from-indigo-500 to-violet-700",
     glow: "rgba(99,102,241,0.34)",
     tag: "DESIGN CHALLENGE",
@@ -56,7 +52,6 @@ export function ChallengeSection() {
   const [tilt, setTilt] = useState({ x: 0, y: 0 })
   const dragStart = useRef<number | null>(null)
   const event = events[activeIndex]
-  const Icon = event.icon
 
   const navigate = useCallback((nextIndex: number) => {
     setDirection(nextIndex > activeIndex || (activeIndex === events.length - 1 && nextIndex === 0) ? 1 : -1)
@@ -103,7 +98,6 @@ export function ChallengeSection() {
                 <div className="relative flex h-full flex-col justify-between" style={{ transform: `perspective(800px) rotateX(${tilt.x}deg) rotateY(${tilt.y}deg)`, transition: "transform 180ms ease-out" }}>
                   <div className="flex items-center justify-between text-xs font-bold tracking-[0.2em] text-white/70"><span>ICDMB 2026</span><span>0{activeIndex + 1} / 0{events.length}</span></div>
                   <div className="mx-auto flex max-w-sm flex-1 flex-col items-center justify-center text-center">
-                    <div className={`mb-6 rounded-3xl bg-gradient-to-br ${event.accent} p-5 shadow-2xl transition-transform duration-500 group-hover:scale-110`}><Icon className="size-14 text-white" aria-hidden="true" /></div>
                     <p className="text-xs font-bold tracking-[0.3em] text-white/70">{event.tag}</p>
                     <h3 className="mt-3 text-3xl font-black tracking-tight text-white sm:text-4xl">{event.title}</h3>
                   </div>
@@ -115,7 +109,7 @@ export function ChallengeSection() {
                   <div className="mb-5 flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] text-primary"><span className="size-2 rounded-full bg-primary motion-safe:animate-pulse" /> Featured challenge</div>
                   <p className="text-xl font-semibold text-card-foreground sm:text-2xl">{event.subtitle}</p>
                   <p className="mt-5 leading-7 text-muted-foreground">{event.description}</p>
-                  <div className="mt-7 grid gap-3 sm:grid-cols-2">{event.rewards.map((reward) => <div key={reward} className="flex items-center gap-3 rounded-xl border border-border bg-muted/40 px-4 py-3 text-sm font-medium text-card-foreground"><Award className="size-5 shrink-0 text-primary" aria-hidden="true" /><span>{reward}</span></div>)}</div>
+                  <div className="mt-7 grid gap-3 sm:grid-cols-2">{event.rewards.map((reward) => <div key={reward} className="flex items-center gap-3 rounded-xl border border-border bg-muted/40 px-4 py-3 text-sm font-medium text-card-foreground"><span>{reward}</span></div>)}</div>
                 </div>
                 <a href={registrationUrl} target="_blank" rel="noreferrer" className="mt-8 inline-flex w-fit items-center gap-2 rounded-full bg-primary px-6 py-3 font-bold text-primary-foreground shadow-lg shadow-primary/20 transition hover:-translate-y-1 hover:shadow-primary/40 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2">Register for this challenge <ExternalLink className="size-4" aria-hidden="true" /></a>
               </div>
