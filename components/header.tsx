@@ -53,7 +53,7 @@ export function Header() {
             {menuItems.map((item) => (
               <Link
                 key={item}
-                href={item === "Speakers" ? "#prominent-speakers" : item === "Travel and Accommodation" ? "#venue" : `#${item.toLowerCase().replace(/\s+/g, "-")}`}
+                href={item === "Home" ? "/" : item === "Speakers" ? "/#prominent-speakers" : item === "Travel and Accommodation" ? "/#venue" : `/#${item.toLowerCase().replace(/\s+/g, "-")}`}
                 className="px-2 py-2 text-xs text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors relative group whitespace-nowrap"
               >
                 {item}
@@ -74,7 +74,7 @@ export function Header() {
               </div>
             </details>
             {trailingMenuItems.map((item) => (
-              <Link key={item} href={item === "Travel and Accommodation" ? "#venue" : `#${item.toLowerCase().replace(/\s+/g, "-")}`} className="px-2 py-2 text-xs text-gray-600 transition-colors hover:text-primary dark:text-gray-400 dark:hover:text-primary">
+              <Link key={item} href={item === "Travel and Accommodation" ? "/#venue" : `/#${item.toLowerCase().replace(/\s+/g, "-")}`} className="px-2 py-2 text-xs text-gray-600 transition-colors hover:text-primary dark:text-gray-400 dark:hover:text-primary">
                 {item}
               </Link>
             ))}
@@ -107,7 +107,7 @@ export function Header() {
               {menuItems.map((item) => (
                 <Link
                   key={item}
-                  href={item === "Speakers" ? "#prominent-speakers" : `#${item.toLowerCase().replace(/\s+/g, "-")}`}
+href={item === "Home" ? "/" : item === "Speakers" ? "/#prominent-speakers" : item === "Travel and Accommodation" ? "/#venue" : `/#${item.toLowerCase().replace(/\s+/g, "-")}`}
                   className="px-4 py-3 text-sm text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary hover:bg-primary/5 rounded-lg transition-colors"
                   onClick={() => setMobileMenuOpen(false)}
                 >
@@ -122,7 +122,7 @@ export function Header() {
               {trailingMenuItems.map((item) => (
                 <Link
                   key={item}
-                  href={item === "Travel and Accommodation" ? "#venue" : `#${item.toLowerCase().replace(/\s+/g, "-")}`}
+                  href={item === "Travel and Accommodation" ? "/#venue" : `/#${item.toLowerCase().replace(/\s+/g, "-")}`}
                   className="px-4 py-3 text-sm text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary hover:bg-primary/5 rounded-lg transition-colors"
                   onClick={() => setMobileMenuOpen(false)}
                 >
