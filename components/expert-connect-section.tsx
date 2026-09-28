@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { ArrowRight, BriefcaseBusiness, Lightbulb, Sparkles } from "lucide-react"
+import { BriefcaseBusiness, Lightbulb, Sparkles } from "lucide-react"
 
 const sessions = [
   {
@@ -75,9 +75,6 @@ export function ExpertConnectSection() {
                 <div className="flex min-h-64 flex-col p-7 sm:min-h-72 sm:p-9">
                   <p className="text-xl font-semibold leading-snug text-foreground sm:text-2xl">{session.subtitle}</p>
                   <p className="mt-5 text-base leading-8 text-muted-foreground sm:text-lg">{session.description}</p>
-                  <button type="button" className="mt-auto inline-flex w-fit items-center gap-2 pt-8 text-sm font-bold text-primary transition-all duration-300 group-hover:gap-3 sm:text-base">
-                    Learn More <ArrowRight className="size-5 transition-transform duration-300 group-hover:translate-x-1" aria-hidden="true" />
-                  </button>
                 </div>
               </motion.article>
             )
