@@ -44,7 +44,7 @@ export function Header() {
                 <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-primary transition-all group-hover:w-3/4" />
               </Link>
             ))}
-            <details className="group relative order-last">
+            <details className="group relative">
               <summary className="flex cursor-pointer list-none items-center gap-1 rounded-lg border border-primary/20 bg-primary/5 px-3 py-2 text-xs font-semibold text-primary transition-colors hover:border-primary/40 hover:bg-primary/10 dark:border-primary/30 dark:bg-primary/10">
                 Authors
                 <ChevronDown className="size-3 transition-transform group-open:rotate-180" aria-hidden="true" />
