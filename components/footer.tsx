@@ -2,14 +2,15 @@ import { Mail, Phone, Globe } from "lucide-react"
 import Link from "next/link"
 
 const quickLinks = [
-  { label: "Home", href: "#home" },
-  { label: "About ICDMB", href: "#about-icdmb" },
-  { label: "Speakers", href: "#organizing-committee" },
-  { label: "Conference Themes", href: "#conference-themes" },
-  { label: "Important Dates", href: "#important-dates" },
-  { label: "Registration", href: "#registration" },
-  { label: "Travel and Accommodation", href: "#venue" },
-  { label: "Contact Us", href: "#contact-us" },
+  { label: "Home", href: "/" },
+  { label: "About ICDMB", href: "/#about-icdmb" },
+  { label: "Speakers", href: "/#prominent-speakers" },
+  { label: "Conference Themes", href: "/#conference-themes" },
+  { label: "Important Dates", href: "/#important-dates" },
+  { label: "Registration", href: "/#registration" },
+  { label: "Authors", href: "/accommodation" },
+  { label: "Travel and Accommodation", href: "/#venue" },
+  { label: "Contact Us", href: "/#contact-us" },
 ]
 
 export function Footer() {
