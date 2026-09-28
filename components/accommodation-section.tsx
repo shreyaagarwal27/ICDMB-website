@@ -1,6 +1,6 @@
 const contacts = [
   { name: "Mr. Ankit Srivastava", phone: "+91 82690 87517" },
-  { name: "Deepak Mishra", phone: "+91 79-05248009" },
+  { name: "Deepak Mishra", phone: "+91 7905248009" },
 ]
 
 export function AccommodationSection() {
