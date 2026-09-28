@@ -141,10 +141,14 @@ className="group flex min-h-48 w-full flex-col items-center justify-center gap-4
 
             {/* Shiva Enterprises */}
             <div className="group flex min-h-48 w-full flex-col items-center justify-center gap-4 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-800/60 p-6 transition-all hover:border-primary/50 hover:shadow-lg sm:w-[calc(50%-0.625rem)] lg:w-[calc(33.333%-0.875rem)]">
-              <div className="flex h-20 items-center justify-center rounded-lg bg-white px-6 py-4">
-                <span className="font-serif text-4xl font-bold italic tracking-tight bg-gradient-to-r from-orange-500 via-rose-500 to-red-600 bg-clip-text text-transparent">
-                  Shiva
-                </span>
+              <div className="flex h-20 w-full items-center justify-center rounded-lg bg-white px-4 py-3">
+                <Image
+                  src="/images/shiva-enterprises-logo.png"
+                  alt="Shiva Enterprises logo"
+                  width={320}
+                  height={104}
+                  className="h-16 w-full object-contain"
+                />
               </div>
               <span className="text-xs font-medium uppercase tracking-widest text-gray-500 dark:text-gray-400 text-center">
                 Shiva Enterprises
