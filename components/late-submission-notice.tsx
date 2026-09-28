@@ -6,28 +6,27 @@ export function LateSubmissionNotice() {
   return (
     <aside
       aria-label="ICDMB 2026 late paper submission announcement"
-      className="fixed inset-x-0 top-20 z-[45] border-y border-violet-300/30 bg-gradient-to-r from-[#26104f] via-[#4c1d95] to-[#172554] text-white shadow-lg shadow-violet-950/30"
+      className="fixed inset-x-0 top-20 z-[45] border-y border-amber-400/35 bg-[#0b1220] text-white shadow-lg shadow-black/30"
     >
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_18%_50%,rgba(34,211,238,0.16),transparent_28%),radial-gradient(circle_at_82%_20%,rgba(167,139,250,0.2),transparent_32%)] motion-safe:animate-pulse" />
-      <div className="relative mx-auto flex min-h-16 max-w-7xl flex-wrap items-center justify-center gap-x-4 gap-y-2 px-4 py-2.5 text-xs sm:gap-x-5 sm:px-6 sm:text-sm lg:flex-nowrap lg:justify-between lg:px-8">
-        <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-1.5 text-center lg:justify-start lg:text-left">
-          <span className="inline-flex items-center gap-1.5 whitespace-nowrap rounded-full border border-red-300/50 bg-red-500/15 px-2.5 py-1 text-[10px] font-bold tracking-[0.14em] text-red-100">
-            <span className="size-1.5 animate-pulse rounded-full bg-red-300" aria-hidden="true" />
-            FINAL OPPORTUNITY
-          </span>
-          <span className="font-semibold text-violet-100">ICDMB 2026 — Late Paper Submission Open</span>
-          <span className="hidden text-violet-300 lg:inline" aria-hidden="true">|</span>
-          <span className="whitespace-nowrap text-violet-100">Deadline: <strong className="text-base font-extrabold text-cyan-200">05 October 2026</strong></span>
-          <span className="hidden text-violet-300 lg:inline" aria-hidden="true">|</span>
-          <strong className="whitespace-nowrap text-base font-extrabold text-cyan-200">₹9,500/-</strong>
-          <span className="hidden text-violet-300 lg:inline" aria-hidden="true">|</span>
-          <span className="text-violet-100">Published ONLY in <strong className="text-white">Advanced Design and Materials Engineering</strong></span>
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_12%_50%,rgba(245,158,11,0.12),transparent_25%),radial-gradient(circle_at_88%_50%,rgba(30,64,175,0.18),transparent_30%)] motion-safe:animate-pulse" />
+      <div className="relative mx-auto grid max-w-7xl items-center gap-3 px-4 py-3 text-xs sm:px-6 lg:grid-cols-[auto_minmax(0,1fr)_auto] lg:px-8">
+        <span className="mx-auto inline-flex items-center gap-1.5 whitespace-nowrap rounded-full border border-amber-400/50 bg-amber-400/10 px-2.5 py-1 text-[10px] font-bold tracking-[0.14em] text-amber-200 lg:mx-0">
+          <span className="size-1.5 animate-pulse rounded-full bg-amber-300" aria-hidden="true" />
+          FINAL OPPORTUNITY
+        </span>
+        <div className="grid min-w-0 gap-1 text-center lg:text-left">
+          <p className="font-semibold text-slate-100">ICDMB 2026 <span className="text-amber-300">·</span> Late Paper Submission Open</p>
+          <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-slate-300 lg:justify-start">
+            <span>Deadline: <strong className="font-extrabold text-amber-300">05 October 2026</strong></span>
+            <span>Fee: <strong className="font-extrabold text-amber-300">₹9,500/-</strong></span>
+            <span className="text-slate-300">Published only in <strong className="text-slate-100">Advanced Design and Materials Engineering</strong></span>
+          </div>
         </div>
         <a
           href="https://cmt3.research.microsoft.com/ICDMB2026"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex shrink-0 items-center gap-1.5 rounded-md bg-cyan-300 px-3.5 py-2 text-xs font-extrabold text-slate-950 shadow-md shadow-cyan-500/20 transition-colors hover:bg-cyan-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
+          className="mx-auto inline-flex items-center gap-1.5 rounded-md border border-amber-300 bg-amber-400 px-4 py-2 text-xs font-extrabold text-slate-950 shadow-md shadow-amber-500/20 transition-colors hover:bg-amber-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-200 lg:mx-0"
         >
           SUBMIT PAPER <ArrowRight className="size-3.5" aria-hidden="true" />
         </a>
