@@ -85,10 +85,10 @@ export function Header() {
         {mobileMenuOpen && (
           <nav className="lg:hidden py-4 border-t border-gray-200 dark:border-gray-800">
             <div className="flex flex-col gap-2">
-              {[...menuItems, ...trailingMenuItems].map((item) => (
+              {menuItems.map((item) => (
                 <Link
                   key={item}
-                  href={item === "Speakers" ? "#prominent-speakers" : item === "Travel and Accommodation" ? "#venue" : `#${item.toLowerCase().replace(/\s+/g, "-")}`}
+                  href={item === "Speakers" ? "#prominent-speakers" : `#${item.toLowerCase().replace(/\s+/g, "-")}`}
                   className="px-4 py-3 text-sm text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary hover:bg-primary/5 rounded-lg transition-colors"
                   onClick={() => setMobileMenuOpen(false)}
                 >
@@ -100,6 +100,16 @@ export function Header() {
                 <Link href="/accommodation" className="block rounded-lg px-8 py-3 text-sm text-gray-600 hover:bg-primary/5 hover:text-primary dark:text-gray-300" onClick={() => setMobileMenuOpen(false)}>Accommodation</Link>
                 <Link href="#submission" className="block rounded-lg px-8 py-3 text-sm text-gray-600 hover:bg-primary/5 hover:text-primary dark:text-gray-300" onClick={() => setMobileMenuOpen(false)}>Presentation Guide</Link>
               </div>
+              {trailingMenuItems.map((item) => (
+                <Link
+                  key={item}
+                  href={item === "Travel and Accommodation" ? "#venue" : `#${item.toLowerCase().replace(/\s+/g, "-")}`}
+                  className="px-4 py-3 text-sm text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary hover:bg-primary/5 rounded-lg transition-colors"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  {item}
+                </Link>
+              ))}
             </div>
           </nav>
         )}
