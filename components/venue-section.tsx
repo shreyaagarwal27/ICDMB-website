@@ -171,24 +171,11 @@ className="group flex min-h-48 w-full flex-col items-center justify-center gap-4
             <div className="bg-white dark:bg-gray-900 rounded-xl shadow-md p-6 md:p-8 border border-gray-200 dark:border-gray-800 hover:border-primary/50 transition-colors">
               <div className="flex items-start gap-3 mb-4">
                 <MapPin className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
-                <h3 className="font-serif text-xl font-semibold text-gray-900 dark:text-white">Venue & Accommodation</h3>
+                <h3 className="font-serif text-xl font-semibold text-gray-900 dark:text-white">Venue</h3>
               </div>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
                 The conference will be held in hybrid mode at MANIT Bhopal.
               </p>
-              <div className="mt-5 border-t border-gray-200 pt-5 dark:border-gray-800">
-                <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-300">
-                  Institute accommodation in the Faculty Guest House is available on a first-come, first-served basis.
-                </p>
-                <p className="mt-3 font-semibold text-gray-900 dark:text-white">Room charges: ₹1,000/night</p>
-                <div className="mt-4">
-                  <p className="text-sm font-semibold text-primary">For booking, contact:</p>
-                  <div className="mt-2 space-y-1 text-sm text-gray-600 dark:text-gray-300">
-                    <a className="block hover:text-primary" href="tel:+918269087517">Mr. Ankit Srivastava: +91 82690 87517</a>
-                    <a className="block hover:text-primary" href="tel:+917905248009">Deepak Mishra: +91 79-05248009</a>
-                  </div>
-                </div>
-              </div>
             </div>
 
             {/* Publication Card */}
