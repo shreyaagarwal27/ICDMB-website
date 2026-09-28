@@ -12,9 +12,9 @@ const menuItems = [
   "Conference Themes",
   "Important Dates",
   "Registration",
-  "Travel and Accommodation",
-  "Contact Us",
 ]
+
+const trailingMenuItems = ["Travel and Accommodation", "Contact Us"]
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -44,16 +44,21 @@ export function Header() {
                 <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-primary transition-all group-hover:w-3/4" />
               </Link>
             ))}
-            <details className="relative group">
-              <summary className="flex cursor-pointer list-none items-center gap-1 px-2 py-2 text-xs text-gray-600 transition-colors hover:text-primary dark:text-gray-400 dark:hover:text-primary">
+            <details className="group relative order-last">
+              <summary className="flex cursor-pointer list-none items-center gap-1 rounded-lg border border-primary/20 bg-primary/5 px-3 py-2 text-xs font-semibold text-primary transition-colors hover:border-primary/40 hover:bg-primary/10 dark:border-primary/30 dark:bg-primary/10">
                 Authors
-                <ChevronDown className="size-3" aria-hidden="true" />
+                <ChevronDown className="size-3 transition-transform group-open:rotate-180" aria-hidden="true" />
               </summary>
-              <div className="absolute right-0 top-full mt-2 min-w-48 rounded-lg border border-gray-200 bg-white p-2 shadow-lg dark:border-gray-800 dark:bg-gray-900">
-                <Link href="#accommodation" className="block rounded-md px-3 py-2 text-sm text-gray-600 hover:bg-primary/5 hover:text-primary dark:text-gray-300">Accommodation</Link>
-                <Link href="#submission" className="block rounded-md px-3 py-2 text-sm text-gray-600 hover:bg-primary/5 hover:text-primary dark:text-gray-300">Presentation Guide</Link>
+              <div className="absolute right-0 top-full z-10 mt-2 min-w-56 overflow-hidden rounded-xl border border-gray-200 bg-white p-1.5 shadow-xl ring-1 ring-black/5 dark:border-gray-800 dark:bg-gray-900">
+                <Link href="/accommodation" className="block rounded-lg px-3 py-2.5 text-sm font-medium text-gray-700 transition-colors hover:bg-primary/10 hover:text-primary dark:text-gray-200">Accommodation</Link>
+                <Link href="#submission" className="block rounded-lg px-3 py-2.5 text-sm font-medium text-gray-700 transition-colors hover:bg-primary/10 hover:text-primary dark:text-gray-200">Presentation Guide</Link>
               </div>
             </details>
+            {trailingMenuItems.map((item) => (
+              <Link key={item} href={item === "Travel and Accommodation" ? "#venue" : `#${item.toLowerCase().replace(/\s+/g, "-")}`} className="px-2 py-2 text-xs text-gray-600 transition-colors hover:text-primary dark:text-gray-400 dark:hover:text-primary">
+                {item}
+              </Link>
+            ))}
           </nav>
 
           <div className="flex items-center gap-2">
@@ -80,7 +85,7 @@ export function Header() {
         {mobileMenuOpen && (
           <nav className="lg:hidden py-4 border-t border-gray-200 dark:border-gray-800">
             <div className="flex flex-col gap-2">
-              {menuItems.map((item) => (
+              {[...menuItems, ...trailingMenuItems].map((item) => (
                 <Link
                   key={item}
                   href={item === "Speakers" ? "#prominent-speakers" : item === "Travel and Accommodation" ? "#venue" : `#${item.toLowerCase().replace(/\s+/g, "-")}`}
@@ -92,7 +97,7 @@ export function Header() {
               ))}
               <div className="border-t border-gray-200 pt-2 dark:border-gray-800">
                 <p className="px-4 py-2 text-xs font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400">Authors</p>
-                <Link href="#accommodation" className="block rounded-lg px-8 py-3 text-sm text-gray-600 hover:bg-primary/5 hover:text-primary dark:text-gray-300" onClick={() => setMobileMenuOpen(false)}>Accommodation</Link>
+                <Link href="/accommodation" className="block rounded-lg px-8 py-3 text-sm text-gray-600 hover:bg-primary/5 hover:text-primary dark:text-gray-300" onClick={() => setMobileMenuOpen(false)}>Accommodation</Link>
                 <Link href="#submission" className="block rounded-lg px-8 py-3 text-sm text-gray-600 hover:bg-primary/5 hover:text-primary dark:text-gray-300" onClick={() => setMobileMenuOpen(false)}>Presentation Guide</Link>
               </div>
             </div>

@@ -14,7 +14,6 @@ import { Header } from "@/components/header"
 import { RegistrationSection } from "@/components/registration-section"
 import { CommitteesSection } from "@/components/committees-section"
 import { VenueSection } from "@/components/venue-section"
-import { AccommodationSection } from "@/components/accommodation-section"
 import { MapSection } from "@/components/map-section"
 import { TravelAttractionsSection } from "@/components/travel-attractions-section"
 import { ContactSection } from "@/components/contact-section"
@@ -37,7 +36,6 @@ export default function HomePage() {
       <ImportantDates />
       <RegistrationSection />
       <div id="travel-and-accomodation">
-        <AccommodationSection />
         <VenueSection />
         <MapSection />
         <TravelAttractionsSection />
