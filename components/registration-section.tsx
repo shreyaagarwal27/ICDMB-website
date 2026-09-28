@@ -96,10 +96,10 @@ export function RegistrationSection() {
               {registrationData.map((row, index) => (
                 <div
                   key={index}
-                  className="grid grid-cols-3 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors duration-200"
+                  className={`grid grid-cols-3 transition-all duration-300 ${row.category === "Co-authorship participation" ? "bg-gradient-to-r from-cyan-500/10 via-blue-500/15 to-indigo-500/10 shadow-[inset_0_0_28px_rgba(59,130,246,0.12)] ring-1 ring-inset ring-blue-400/35 motion-safe:animate-pulse hover:from-cyan-500/15 hover:via-blue-500/20 hover:to-indigo-500/15" : "hover:bg-gray-50 dark:hover:bg-gray-800"}`}
                 >
                   <div className="px-6 py-5 flex items-center gap-3">
-                    <span className="text-gray-700 dark:text-gray-200">{row.category}</span>
+                    <span className={row.category === "Co-authorship participation" ? "font-semibold text-blue-700 dark:text-cyan-200" : "text-gray-700 dark:text-gray-200"}>{row.category}</span>
                     {row.badge && (
                       <span className="inline-flex items-center gap-1 px-2 py-1 rounded-full bg-amber-100 dark:bg-primary/20 border border-amber-300 dark:border-primary/30 text-amber-700 dark:text-primary text-xs font-medium">
                         <Sparkles className="w-3 h-3" />
@@ -128,11 +128,11 @@ export function RegistrationSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: index * 0.1 }}
-              className="rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 overflow-hidden"
+              className={`rounded-xl border overflow-hidden transition-all duration-300 ${row.category === "Co-authorship participation" ? "border-blue-400/60 bg-gradient-to-br from-cyan-500/10 via-blue-500/10 to-indigo-500/10 shadow-lg shadow-blue-500/10 motion-safe:animate-pulse" : "border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900"}`}
             >
               {/* Card Header */}
               <div className="px-5 py-4 border-b border-gray-200 dark:border-gray-700 flex items-center justify-between">
-                <span className="font-medium text-gray-900 dark:text-white">{row.category}</span>
+                <span className={row.category === "Co-authorship participation" ? "font-semibold text-blue-700 dark:text-cyan-200" : "font-medium text-gray-900 dark:text-white"}>{row.category}</span>
                 {row.badge && (
                   <span className="inline-flex items-center gap-1 px-2 py-1 rounded-full bg-amber-100 dark:bg-primary/20 border border-amber-300 dark:border-primary/30 text-amber-700 dark:text-primary text-xs font-medium">
                     <Sparkles className="w-3 h-3" />
