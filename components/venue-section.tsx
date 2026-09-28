@@ -174,7 +174,7 @@ className="group flex min-h-48 w-full flex-col items-center justify-center gap-4
                 <h3 className="font-serif text-xl font-semibold text-gray-900 dark:text-white">Venue</h3>
               </div>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                The conference will be held in hybrid mode at MANIT Bhopal.
+                The conference will be held in hybrid mode at the Department of Mechanical Engineering, MANIT Bhopal.
               </p>
             </div>
 
