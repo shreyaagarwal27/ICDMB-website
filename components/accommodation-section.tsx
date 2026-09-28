@@ -5,7 +5,12 @@ const contacts = [
 
 export function AccommodationSection() {
   return (
-    <section id="accommodation" className="bg-gray-50 py-16 dark:bg-gray-950 sm:py-20">
+    <section id="accommodation" className="relative isolate overflow-hidden bg-gray-50 py-16 dark:bg-gray-950 sm:py-20">
+      <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden" aria-hidden="true">
+        <div className="absolute -left-1/4 top-1/4 h-[28rem] w-[28rem] rounded-full bg-blue-500/10 blur-3xl motion-safe:animate-[drift_18s_ease-in-out_infinite] dark:bg-blue-500/15" />
+        <div className="absolute -right-1/4 bottom-0 h-[30rem] w-[30rem] rounded-full bg-indigo-500/10 blur-3xl motion-safe:animate-[drift-reverse_22s_ease-in-out_infinite] dark:bg-indigo-500/15" />
+        <div className="absolute inset-0 bg-gradient-to-br from-transparent via-primary/[0.03] to-cyan-400/[0.05]" />
+      </div>
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="font-serif text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">Accommodation</h2>

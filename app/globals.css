@@ -162,7 +162,27 @@
   animation: blue-glow-dark 2s ease-in-out infinite;
 }
 
-/* Added fade-in-up animation for About Department section */
+  @keyframes drift {
+  0%,
+  100% {
+    transform: translate3d(-5%, -3%, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(12%, 8%, 0) scale(1.12);
+  }
+  }
+
+  @keyframes drift-reverse {
+  0%,
+  100% {
+    transform: translate3d(5%, 4%, 0) scale(1.08);
+  }
+  50% {
+    transform: translate3d(-10%, -6%, 0) scale(0.95);
+  }
+  }
+
+  /* Added fade-in-up animation for About Department section */
 @keyframes fade-in-up {
   0% {
     opacity: 0;
