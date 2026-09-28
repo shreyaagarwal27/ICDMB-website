@@ -51,7 +51,7 @@ export function Header() {
               </summary>
               <div className="absolute right-0 top-full z-10 mt-2 min-w-56 overflow-hidden rounded-xl border border-gray-200 bg-white p-1.5 shadow-xl ring-1 ring-black/5 dark:border-gray-800 dark:bg-gray-900">
                 <Link href="/accommodation" className="block rounded-lg px-3 py-2.5 text-sm font-medium text-gray-700 transition-colors hover:bg-primary/10 hover:text-primary dark:text-gray-200">Accommodation</Link>
-                <Link href="#submission" className="block rounded-lg px-3 py-2.5 text-sm font-medium text-gray-700 transition-colors hover:bg-primary/10 hover:text-primary dark:text-gray-200">Presentation Guide</Link>
+                <a href="/presentation-guide.pdf" target="_blank" rel="noopener noreferrer" className="block rounded-lg px-3 py-2.5 text-sm font-medium text-gray-700 transition-colors hover:bg-primary/10 hover:text-primary dark:text-gray-200">Presentation Guide</a>
               </div>
             </details>
             {trailingMenuItems.map((item) => (
@@ -98,7 +98,7 @@ export function Header() {
               <div className="border-t border-gray-200 pt-2 dark:border-gray-800">
                 <p className="px-4 py-2 text-xs font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400">Authors</p>
                 <Link href="/accommodation" className="block rounded-lg px-8 py-3 text-sm text-gray-600 hover:bg-primary/5 hover:text-primary dark:text-gray-300" onClick={() => setMobileMenuOpen(false)}>Accommodation</Link>
-                <Link href="#submission" className="block rounded-lg px-8 py-3 text-sm text-gray-600 hover:bg-primary/5 hover:text-primary dark:text-gray-300" onClick={() => setMobileMenuOpen(false)}>Presentation Guide</Link>
+                <a href="/presentation-guide.pdf" target="_blank" rel="noopener noreferrer" className="block rounded-lg px-8 py-3 text-sm text-gray-600 hover:bg-primary/5 hover:text-primary dark:text-gray-300" onClick={() => setMobileMenuOpen(false)}>Presentation Guide</a>
               </div>
               {trailingMenuItems.map((item) => (
                 <Link
