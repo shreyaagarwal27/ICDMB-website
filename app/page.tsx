@@ -21,7 +21,7 @@ import { LateSubmissionNotice } from "@/components/late-submission-notice"
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen bg-[#0f172a]">
+    <main className="min-h-screen bg-[#0f172a] pt-16 sm:pt-[4.5rem]">
       <Header />
       <HeroSection />
       <ActionBar />
