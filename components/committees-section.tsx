@@ -117,6 +117,12 @@ const prominentSpeakers = [
     image: "/images/siddhartha-pathak.png",
     objectPosition: "center 25%",
   },
+  {
+    name: "Mr. Piyush Padmanabham",
+    designation: "CEO & Co-founder",
+    institution: "Next Big Innovation Labs Pvt. Ltd.",
+    image: "/images/piyush-padmanabham.png",
+  },
 ]
 
 // Organizing Secretaries
