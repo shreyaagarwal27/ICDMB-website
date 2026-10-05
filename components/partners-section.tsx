@@ -18,8 +18,8 @@ export function PartnersSection() {
         <div className="grid items-stretch gap-8 md:grid-cols-2">
           <div className="flex min-h-[320px] items-center justify-center rounded-xl border border-gray-200 bg-white p-5 shadow-lg dark:border-gray-700 dark:bg-gray-800/80 sm:p-6">
             <img
-              src="/images/atlantis-press-cover.png"
-              alt="Atlantis Press publication cover"
+src="/images/atlantis-springer-logo.jpeg"
+            alt="Atlantis Press and Springer Nature publication partners"
               className="max-h-[360px] w-auto max-w-full object-contain"
             />
           </div>
