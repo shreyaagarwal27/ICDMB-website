@@ -40,13 +40,6 @@ const prominentSpeakers = [
     image: "/images/rajiv-tiwari.png",
   },
   {
-    name: "Prof. Dillip Kumar Pratihar",
-    designation: "Professor, Department of Mechanical Engineering",
-    institution: "IIT Kharagpur, West Bengal, India",
-    image: "/images/dilip-kumar-pratihar.jpg",
-    objectPosition: "center 25%",
-  },
-  {
     name: "Dr. Tarun Gupta",
     designation: "Professor, Department of Industrial and Entrepreneurial Engineering and Engineering Management",
     institution: "Western Michigan University",
@@ -59,18 +52,6 @@ const prominentSpeakers = [
     institution: "Penn State Erie, The Behrend College, USA",
     image: "/images/chetan-nikhare.jpg",
     objectPosition: "center 30%",
-  },
-  {
-    name: "Prof. Chandra Sekher Yarramalli",
-    designation: "Professor, Department of Aerospace Engineering",
-    institution: "IIT Bombay, Maharashtra, India",
-    image: "/images/chandra-sekher-yerramalli.jpg",
-  },
-  {
-    name: "Dr. Asish B. Deoghare",
-    designation: "Associate Professor, Department of Mechanical Engineering",
-    institution: "NIT Silchar, Assam, India",
-    image: "/images/ashish-b-deoghare.jpg",
   },
   {
     name: "Dr. Neha Arya",
@@ -109,13 +90,6 @@ const prominentSpeakers = [
     designation: "Assistant Professor, Department of Biotechnology",
     institution: "National Institute of Technology (NIT) Raipur",
     image: "/images/chinmaya-mahapatra.jpeg",
-  },
-  {
-    name: "Dr. Siddharth Pathak",
-    designation: "Application Engineer",
-    institution: "MIDAS R&D Center, Mumbai, Maharashtra",
-    image: "/images/siddhartha-pathak.png",
-    objectPosition: "center 25%",
   },
   {
     name: "Mr. Piyush Padmanabham",
