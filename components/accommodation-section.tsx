@@ -13,7 +13,7 @@ export function AccommodationSection() {
       </div>
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h2 className="font-serif text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">Accommodation</h2>
+          <h2 className="bg-gradient-to-r from-blue-400 via-cyan-300 to-indigo-400 bg-clip-text font-serif text-3xl font-bold tracking-tight text-transparent sm:text-4xl">Accommodation</h2>
           <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-gray-600 dark:text-gray-300 sm:text-lg">
             Institute accommodation in the Faculty Guest House is available on a first-come, first-served basis.
           </p>
