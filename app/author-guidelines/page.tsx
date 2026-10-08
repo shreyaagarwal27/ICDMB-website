@@ -1,7 +1,7 @@
 import { Header } from "@/components/header"
 
 export const metadata = {
-  title: "Author Guidelines | ICDMB 2026",
+  title: "Publication Guidelines | ICDMB 2026",
   description: "Publication ethics and malpractice statement for ICDMB 2026 authors.",
 }
 
@@ -18,7 +18,7 @@ export default function AuthorGuidelinesPage() {
         <section className="relative mx-auto max-w-4xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
           <div className="rounded-3xl border border-slate-700/80 bg-slate-900/75 p-6 shadow-2xl shadow-blue-950/20 backdrop-blur sm:p-10">
             <div className="mb-8 text-center">
-              <h1 className="animate-[gradient-shift_6s_ease_infinite] bg-[length:200%_auto] bg-gradient-to-r from-blue-400 via-cyan-300 to-indigo-400 bg-clip-text text-3xl font-bold tracking-tight text-transparent sm:text-5xl">Author Guidelines</h1>
+              <h1 className="animate-[gradient-shift_6s_ease_infinite] bg-[length:200%_auto] bg-gradient-to-r from-blue-400 via-cyan-300 to-indigo-400 bg-clip-text text-3xl font-bold tracking-tight text-transparent sm:text-5xl">Publication Guidelines</h1>
             </div>
             <div className="border-t border-slate-700/80 pt-4 sm:pt-5">
               <h2 className="mb-4 animate-[gradient-shift_6s_ease_infinite] bg-[length:200%_auto] bg-gradient-to-r from-blue-400 via-cyan-300 to-indigo-400 bg-clip-text text-center text-xl font-semibold text-transparent sm:text-2xl">Publication Ethics and Malpractice Statement</h2>
